@@ -1,0 +1,2 @@
+==== START logs for container nginx32 of pod default/nginx32-66b64549c9-2789n ====
+==== END logs for container nginx32 of pod default/nginx32-66b64549c9-2789n ====

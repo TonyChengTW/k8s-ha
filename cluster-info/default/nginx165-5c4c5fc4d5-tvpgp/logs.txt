@@ -1,0 +1,2 @@
+==== START logs for container nginx165 of pod default/nginx165-5c4c5fc4d5-tvpgp ====
+==== END logs for container nginx165 of pod default/nginx165-5c4c5fc4d5-tvpgp ====

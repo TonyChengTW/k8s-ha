@@ -1,0 +1,2 @@
+==== START logs for container nginx41 of pod default/nginx41-6867957b95-jbngt ====
+==== END logs for container nginx41 of pod default/nginx41-6867957b95-jbngt ====

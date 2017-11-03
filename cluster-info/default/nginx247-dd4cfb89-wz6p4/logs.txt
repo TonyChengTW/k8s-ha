@@ -1,0 +1,2 @@
+==== START logs for container nginx247 of pod default/nginx247-dd4cfb89-wz6p4 ====
+==== END logs for container nginx247 of pod default/nginx247-dd4cfb89-wz6p4 ====

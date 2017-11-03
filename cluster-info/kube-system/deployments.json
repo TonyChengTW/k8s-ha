@@ -1,0 +1,406 @@
+{
+    "selfLink": "/apis/extensions/v1beta1/namespaces/kube-system/deployments",
+    "resourceVersion": "166256",
+    "Items": [
+        {
+            "name": "kube-dns",
+            "namespace": "kube-system",
+            "selfLink": "/apis/extensions/v1beta1/namespaces/kube-system/deployments/kube-dns",
+            "uid": "265c59f9-bf79-11e7-bb72-005056855b98",
+            "resourceVersion": "138161",
+            "generation": 2,
+            "creationTimestamp": "2017-11-02T02:54:31Z",
+            "labels": {
+                "k8s-app": "kube-dns"
+            },
+            "annotations": {
+                "deployment.kubernetes.io/revision": "1"
+            },
+            "Spec": {
+                "Replicas": 3,
+                "Selector": {
+                    "matchLabels": {
+                        "k8s-app": "kube-dns"
+                    }
+                },
+                "Template": {
+                    "creationTimestamp": null,
+                    "labels": {
+                        "k8s-app": "kube-dns"
+                    },
+                    "Spec": {
+                        "Volumes": [
+                            {
+                                "Name": "kube-dns-config",
+                                "HostPath": null,
+                                "EmptyDir": null,
+                                "GCEPersistentDisk": null,
+                                "AWSElasticBlockStore": null,
+                                "GitRepo": null,
+                                "Secret": null,
+                                "NFS": null,
+                                "ISCSI": null,
+                                "Glusterfs": null,
+                                "PersistentVolumeClaim": null,
+                                "RBD": null,
+                                "Quobyte": null,
+                                "FlexVolume": null,
+                                "Cinder": null,
+                                "CephFS": null,
+                                "Flocker": null,
+                                "DownwardAPI": null,
+                                "FC": null,
+                                "AzureFile": null,
+                                "ConfigMap": {
+                                    "Name": "kube-dns",
+                                    "Items": null,
+                                    "DefaultMode": 420,
+                                    "Optional": true
+                                },
+                                "VsphereVolume": null,
+                                "AzureDisk": null,
+                                "PhotonPersistentDisk": null,
+                                "Projected": null,
+                                "PortworxVolume": null,
+                                "ScaleIO": null,
+                                "StorageOS": null
+                            }
+                        ],
+                        "InitContainers": null,
+                        "Containers": [
+                            {
+                                "Name": "kubedns",
+                                "Image": "gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5",
+                                "Command": null,
+                                "Args": [
+                                    "--domain=cluster.local.",
+                                    "--dns-port=10053",
+                                    "--config-dir=/kube-dns-config",
+                                    "--v=2"
+                                ],
+                                "WorkingDir": "",
+                                "Ports": [
+                                    {
+                                        "Name": "dns-local",
+                                        "HostPort": 0,
+                                        "ContainerPort": 10053,
+                                        "Protocol": "UDP",
+                                        "HostIP": ""
+                                    },
+                                    {
+                                        "Name": "dns-tcp-local",
+                                        "HostPort": 0,
+                                        "ContainerPort": 10053,
+                                        "Protocol": "TCP",
+                                        "HostIP": ""
+                                    },
+                                    {
+                                        "Name": "metrics",
+                                        "HostPort": 0,
+                                        "ContainerPort": 10055,
+                                        "Protocol": "TCP",
+                                        "HostIP": ""
+                                    }
+                                ],
+                                "EnvFrom": null,
+                                "Env": [
+                                    {
+                                        "Name": "PROMETHEUS_PORT",
+                                        "Value": "10055",
+                                        "ValueFrom": null
+                                    }
+                                ],
+                                "Resources": {
+                                    "Limits": {
+                                        "memory": "170Mi"
+                                    },
+                                    "Requests": {
+                                        "cpu": "100m",
+                                        "memory": "70Mi"
+                                    }
+                                },
+                                "VolumeMounts": [
+                                    {
+                                        "Name": "kube-dns-config",
+                                        "ReadOnly": false,
+                                        "MountPath": "/kube-dns-config",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    }
+                                ],
+                                "LivenessProbe": {
+                                    "Exec": null,
+                                    "HTTPGet": {
+                                        "Path": "/healthcheck/kubedns",
+                                        "Port": 10054,
+                                        "Host": "",
+                                        "Scheme": "HTTP",
+                                        "HTTPHeaders": null
+                                    },
+                                    "TCPSocket": null,
+                                    "InitialDelaySeconds": 60,
+                                    "TimeoutSeconds": 5,
+                                    "PeriodSeconds": 10,
+                                    "SuccessThreshold": 1,
+                                    "FailureThreshold": 5
+                                },
+                                "ReadinessProbe": {
+                                    "Exec": null,
+                                    "HTTPGet": {
+                                        "Path": "/readiness",
+                                        "Port": 8081,
+                                        "Host": "",
+                                        "Scheme": "HTTP",
+                                        "HTTPHeaders": null
+                                    },
+                                    "TCPSocket": null,
+                                    "InitialDelaySeconds": 3,
+                                    "TimeoutSeconds": 5,
+                                    "PeriodSeconds": 10,
+                                    "SuccessThreshold": 1,
+                                    "FailureThreshold": 3
+                                },
+                                "Lifecycle": null,
+                                "TerminationMessagePath": "/dev/termination-log",
+                                "TerminationMessagePolicy": "File",
+                                "ImagePullPolicy": "IfNotPresent",
+                                "SecurityContext": null,
+                                "Stdin": false,
+                                "StdinOnce": false,
+                                "TTY": false
+                            },
+                            {
+                                "Name": "dnsmasq",
+                                "Image": "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
+                                "Command": null,
+                                "Args": [
+                                    "-v=2",
+                                    "-logtostderr",
+                                    "-configDir=/etc/k8s/dns/dnsmasq-nanny",
+                                    "-restartDnsmasq=true",
+                                    "--",
+                                    "-k",
+                                    "--cache-size=1000",
+                                    "--log-facility=-",
+                                    "--server=/cluster.local/127.0.0.1#10053",
+                                    "--server=/in-addr.arpa/127.0.0.1#10053",
+                                    "--server=/ip6.arpa/127.0.0.1#10053"
+                                ],
+                                "WorkingDir": "",
+                                "Ports": [
+                                    {
+                                        "Name": "dns",
+                                        "HostPort": 0,
+                                        "ContainerPort": 53,
+                                        "Protocol": "UDP",
+                                        "HostIP": ""
+                                    },
+                                    {
+                                        "Name": "dns-tcp",
+                                        "HostPort": 0,
+                                        "ContainerPort": 53,
+                                        "Protocol": "TCP",
+                                        "HostIP": ""
+                                    }
+                                ],
+                                "EnvFrom": null,
+                                "Env": null,
+                                "Resources": {
+                                    "Limits": null,
+                                    "Requests": {
+                                        "cpu": "150m",
+                                        "memory": "20Mi"
+                                    }
+                                },
+                                "VolumeMounts": [
+                                    {
+                                        "Name": "kube-dns-config",
+                                        "ReadOnly": false,
+                                        "MountPath": "/etc/k8s/dns/dnsmasq-nanny",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    }
+                                ],
+                                "LivenessProbe": {
+                                    "Exec": null,
+                                    "HTTPGet": {
+                                        "Path": "/healthcheck/dnsmasq",
+                                        "Port": 10054,
+                                        "Host": "",
+                                        "Scheme": "HTTP",
+                                        "HTTPHeaders": null
+                                    },
+                                    "TCPSocket": null,
+                                    "InitialDelaySeconds": 60,
+                                    "TimeoutSeconds": 5,
+                                    "PeriodSeconds": 10,
+                                    "SuccessThreshold": 1,
+                                    "FailureThreshold": 5
+                                },
+                                "ReadinessProbe": null,
+                                "Lifecycle": null,
+                                "TerminationMessagePath": "/dev/termination-log",
+                                "TerminationMessagePolicy": "File",
+                                "ImagePullPolicy": "IfNotPresent",
+                                "SecurityContext": null,
+                                "Stdin": false,
+                                "StdinOnce": false,
+                                "TTY": false
+                            },
+                            {
+                                "Name": "sidecar",
+                                "Image": "gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5",
+                                "Command": null,
+                                "Args": [
+                                    "--v=2",
+                                    "--logtostderr",
+                                    "--probe=kubedns,127.0.0.1:10053,kubernetes.default.svc.cluster.local,5,A",
+                                    "--probe=dnsmasq,127.0.0.1:53,kubernetes.default.svc.cluster.local,5,A"
+                                ],
+                                "WorkingDir": "",
+                                "Ports": [
+                                    {
+                                        "Name": "metrics",
+                                        "HostPort": 0,
+                                        "ContainerPort": 10054,
+                                        "Protocol": "TCP",
+                                        "HostIP": ""
+                                    }
+                                ],
+                                "EnvFrom": null,
+                                "Env": null,
+                                "Resources": {
+                                    "Limits": null,
+                                    "Requests": {
+                                        "cpu": "10m",
+                                        "memory": "20Mi"
+                                    }
+                                },
+                                "VolumeMounts": null,
+                                "LivenessProbe": {
+                                    "Exec": null,
+                                    "HTTPGet": {
+                                        "Path": "/metrics",
+                                        "Port": 10054,
+                                        "Host": "",
+                                        "Scheme": "HTTP",
+                                        "HTTPHeaders": null
+                                    },
+                                    "TCPSocket": null,
+                                    "InitialDelaySeconds": 60,
+                                    "TimeoutSeconds": 5,
+                                    "PeriodSeconds": 10,
+                                    "SuccessThreshold": 1,
+                                    "FailureThreshold": 5
+                                },
+                                "ReadinessProbe": null,
+                                "Lifecycle": null,
+                                "TerminationMessagePath": "/dev/termination-log",
+                                "TerminationMessagePolicy": "File",
+                                "ImagePullPolicy": "IfNotPresent",
+                                "SecurityContext": null,
+                                "Stdin": false,
+                                "StdinOnce": false,
+                                "TTY": false
+                            }
+                        ],
+                        "RestartPolicy": "Always",
+                        "TerminationGracePeriodSeconds": 30,
+                        "ActiveDeadlineSeconds": null,
+                        "DNSPolicy": "Default",
+                        "NodeSelector": null,
+                        "ServiceAccountName": "kube-dns",
+                        "AutomountServiceAccountToken": null,
+                        "NodeName": "",
+                        "SecurityContext": {
+                            "HostNetwork": false,
+                            "HostPID": false,
+                            "HostIPC": false,
+                            "SELinuxOptions": null,
+                            "RunAsUser": null,
+                            "RunAsNonRoot": null,
+                            "SupplementalGroups": null,
+                            "FSGroup": null
+                        },
+                        "ImagePullSecrets": null,
+                        "Hostname": "",
+                        "Subdomain": "",
+                        "Affinity": {
+                            "NodeAffinity": {
+                                "RequiredDuringSchedulingIgnoredDuringExecution": {
+                                    "NodeSelectorTerms": [
+                                        {
+                                            "MatchExpressions": [
+                                                {
+                                                    "Key": "beta.kubernetes.io/arch",
+                                                    "Operator": "In",
+                                                    "Values": [
+                                                        "amd64"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "PreferredDuringSchedulingIgnoredDuringExecution": null
+                            },
+                            "PodAffinity": null,
+                            "PodAntiAffinity": null
+                        },
+                        "SchedulerName": "default-scheduler",
+                        "Tolerations": [
+                            {
+                                "Key": "CriticalAddonsOnly",
+                                "Operator": "Exists",
+                                "Value": "",
+                                "Effect": "",
+                                "TolerationSeconds": null
+                            },
+                            {
+                                "Key": "node-role.kubernetes.io/master",
+                                "Operator": "",
+                                "Value": "",
+                                "Effect": "NoSchedule",
+                                "TolerationSeconds": null
+                            }
+                        ],
+                        "HostAliases": null,
+                        "PriorityClassName": "",
+                        "Priority": null
+                    }
+                },
+                "Strategy": {
+                    "Type": "RollingUpdate",
+                    "RollingUpdate": {
+                        "MaxUnavailable": 0,
+                        "MaxSurge": "10%"
+                    }
+                },
+                "MinReadySeconds": 0,
+                "RevisionHistoryLimit": null,
+                "Paused": false,
+                "RollbackTo": null,
+                "ProgressDeadlineSeconds": null
+            },
+            "Status": {
+                "ObservedGeneration": 2,
+                "Replicas": 3,
+                "UpdatedReplicas": 3,
+                "ReadyReplicas": 2,
+                "AvailableReplicas": 2,
+                "UnavailableReplicas": 1,
+                "Conditions": [
+                    {
+                        "Type": "Available",
+                        "Status": "False",
+                        "LastUpdateTime": "2017-11-02T07:17:35Z",
+                        "LastTransitionTime": "2017-11-02T07:17:35Z",
+                        "Reason": "MinimumReplicasUnavailable",
+                        "Message": "Deployment does not have minimum availability."
+                    }
+                ],
+                "CollisionCount": null
+            }
+        }
+    ]
+}

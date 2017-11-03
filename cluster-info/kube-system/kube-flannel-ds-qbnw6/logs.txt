@@ -1,0 +1,62 @@
+==== START logs for container kube-flannel of pod kube-system/kube-flannel-ds-qbnw6 ====
+I1102 06:01:05.399707       1 kube.go:111] Waiting 10m0s for node controller to sync
+I1102 06:01:05.399773       1 kube.go:315] starting kube subnet manager
+I1102 06:01:06.399963       1 kube.go:118] Node controller sync successful
+I1102 06:01:06.400048       1 main.go:132] Installing signal handlers
+I1102 06:01:06.400125       1 manager.go:136] Determining IP address of default interface
+I1102 06:01:06.400369       1 manager.go:149] Using interface with name ens160 and address 192.168.141.152
+I1102 06:01:06.400391       1 manager.go:166] Defaulting external address to interface address (192.168.141.152)
+I1102 06:01:06.402000       1 ipmasq.go:47] Adding iptables rule: -s 10.244.0.0/16 -d 10.244.0.0/16 -j RETURN
+I1102 06:01:06.402966       1 ipmasq.go:47] Adding iptables rule: -s 10.244.0.0/16 ! -d 224.0.0.0/4 -j MASQUERADE
+I1102 06:01:06.404158       1 ipmasq.go:47] Adding iptables rule: ! -s 10.244.0.0/16 -d 10.244.0.0/16 -j MASQUERADE
+I1102 06:01:06.405442       1 manager.go:250] Lease acquired: 10.244.2.0/24
+I1102 06:01:06.405581       1 network.go:58] Watching for L3 misses
+I1102 06:01:06.405594       1 network.go:66] Watching for new subnet leases
+==== END logs for container kube-flannel of pod kube-system/kube-flannel-ds-qbnw6 ====
+==== START logs for container install-cni of pod kube-system/kube-flannel-ds-qbnw6 ====
++ cp -f /etc/kube-flannel/cni-conf.json /etc/cni/net.d/10-flannel.conf
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
+==== END logs for container install-cni of pod kube-system/kube-flannel-ds-qbnw6 ====

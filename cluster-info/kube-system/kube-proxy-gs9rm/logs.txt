@@ -1,0 +1,3 @@
+==== START logs for container kube-proxy of pod kube-system/kube-proxy-gs9rm ====
+Request log error: an error on the server ("unknown") has prevented the request from succeeding (get pods kube-proxy-gs9rm)
+==== END logs for container kube-proxy of pod kube-system/kube-proxy-gs9rm ====

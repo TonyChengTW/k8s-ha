@@ -1,0 +1,2 @@
+==== START logs for container nginx288 of pod default/nginx288-67596c757-ggds7 ====
+==== END logs for container nginx288 of pod default/nginx288-67596c757-ggds7 ====

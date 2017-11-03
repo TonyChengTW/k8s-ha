@@ -1,0 +1,2 @@
+==== START logs for container nginx310 of pod default/nginx310-54997df865-wprxb ====
+==== END logs for container nginx310 of pod default/nginx310-54997df865-wprxb ====

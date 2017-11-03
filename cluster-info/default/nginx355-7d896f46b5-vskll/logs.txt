@@ -1,0 +1,2 @@
+==== START logs for container nginx355 of pod default/nginx355-7d896f46b5-vskll ====
+==== END logs for container nginx355 of pod default/nginx355-7d896f46b5-vskll ====

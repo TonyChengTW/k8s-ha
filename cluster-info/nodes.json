@@ -1,0 +1,847 @@
+{
+    "selfLink": "/api/v1/nodes",
+    "resourceVersion": "166254",
+    "Items": [
+        {
+            "name": "k8s-master1",
+            "selfLink": "/api/v1/nodes/k8s-master1",
+            "uid": "24209f39-bf79-11e7-bb72-005056855b98",
+            "resourceVersion": "158611",
+            "creationTimestamp": "2017-11-02T02:54:27Z",
+            "labels": {
+                "beta.kubernetes.io/arch": "amd64",
+                "beta.kubernetes.io/os": "linux",
+                "kubernetes.io/hostname": "k8s-master1",
+                "node-role.kubernetes.io/master": ""
+            },
+            "annotations": {
+                "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"0a:f5:92:25:26:3e\"}",
+                "flannel.alpha.coreos.com/backend-type": "vxlan",
+                "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                "flannel.alpha.coreos.com/public-ip": "192.168.141.151",
+                "node.alpha.kubernetes.io/ttl": "0",
+                "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+            },
+            "Spec": {
+                "PodCIDR": "10.244.0.0/24",
+                "ExternalID": "k8s-master1",
+                "ProviderID": "",
+                "Unschedulable": true,
+                "Taints": null,
+                "ConfigSource": null
+            },
+            "Status": {
+                "Capacity": {
+                    "cpu": "4",
+                    "memory": "16432956Ki",
+                    "pods": "110"
+                },
+                "Allocatable": {
+                    "cpu": "4",
+                    "memory": "16330556Ki",
+                    "pods": "110"
+                },
+                "Phase": "",
+                "Conditions": [
+                    {
+                        "Type": "OutOfDisk",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:16:46Z",
+                        "LastTransitionTime": "2017-11-02T02:54:23Z",
+                        "Reason": "KubeletHasSufficientDisk",
+                        "Message": "kubelet has sufficient disk space available"
+                    },
+                    {
+                        "Type": "MemoryPressure",
+                        "Status": "Unknown",
+                        "LastHeartbeatTime": "2017-11-03T03:16:46Z",
+                        "LastTransitionTime": "2017-11-03T03:17:27Z",
+                        "Reason": "NodeStatusUnknown",
+                        "Message": "Kubelet stopped posting node status."
+                    },
+                    {
+                        "Type": "DiskPressure",
+                        "Status": "Unknown",
+                        "LastHeartbeatTime": "2017-11-03T03:16:46Z",
+                        "LastTransitionTime": "2017-11-03T03:17:27Z",
+                        "Reason": "NodeStatusUnknown",
+                        "Message": "Kubelet stopped posting node status."
+                    },
+                    {
+                        "Type": "Ready",
+                        "Status": "Unknown",
+                        "LastHeartbeatTime": "2017-11-03T03:16:46Z",
+                        "LastTransitionTime": "2017-11-03T03:17:27Z",
+                        "Reason": "NodeStatusUnknown",
+                        "Message": "Kubelet stopped posting node status."
+                    }
+                ],
+                "Addresses": [
+                    {
+                        "Type": "InternalIP",
+                        "Address": "192.168.141.151"
+                    },
+                    {
+                        "Type": "Hostname",
+                        "Address": "k8s-master1"
+                    }
+                ],
+                "DaemonEndpoints": {
+                    "KubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "NodeInfo": {
+                    "MachineID": "e51a229627814d6399088d3b57777797",
+                    "SystemUUID": "4205F0E4-D453-FCBF-F0AE-D11B87298B85",
+                    "BootID": "61912fe7-33ad-47f1-9b58-8fa8ef33b996",
+                    "KernelVersion": "3.10.0-693.5.2.el7.x86_64",
+                    "OSImage": "CentOS Linux 7 (Core)",
+                    "ContainerRuntimeVersion": "docker://Unknown",
+                    "KubeletVersion": "v1.8.1",
+                    "KubeProxyVersion": "v1.8.1",
+                    "OperatingSystem": "linux",
+                    "Architecture": "amd64"
+                },
+                "Images": [
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-apiserver-amd64@sha256:e1f4066f2f8e0cf975d8427842d95c86fd872c239e9ed2534f83121ebdce10a1",
+                            "gcr.io/google_containers/kube-apiserver-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 194040691
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/etcd-amd64@sha256:d83d3545e06fb035db8512e33bd44afb55dea007a3abd7b17742d3ac6d235940",
+                            "gcr.io/google_containers/etcd-amd64:3.0.17"
+                        ],
+                        "SizeBytes": 168935516
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-controller-manager-amd64@sha256:d9a1ab41ba39939511077ce2da44774daafaaecc6460a62358c6e0428831b7d2",
+                            "gcr.io/google_containers/kube-controller-manager-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 129216678
+                    },
+                    {
+                        "Names": [
+                            "nginx@sha256:adea4f68096fded167603ba6663ed615a80e090da68eb3c9e2508c15c8368401",
+                            "nginx:latest"
+                        ],
+                        "SizeBytes": 108362045
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-proxy-amd64@sha256:58fd496116bf3d2790279f9c44040bdfa71791aba7a7a1b5ca35025b5a032b9f",
+                            "gcr.io/google_containers/kube-proxy-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 93137473
+                    },
+                    {
+                        "Names": [
+                            "quay.io/coreos/flannel@sha256:034e1e396d668bd5faea285d8ff6f7f46b483e9efb3a25b46a3c69cf129b60aa",
+                            "quay.io/coreos/flannel:v0.7.1-amd64"
+                        ],
+                        "SizeBytes": 77761467
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-scheduler-amd64@sha256:fbb29b579b8f20075073987023caa146783d85eac66808c0860f99187fc02454",
+                            "gcr.io/google_containers/kube-scheduler-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 54884010
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:1a3fc069de481ae690188f6f1ba4664b5cc7760af37120f70c86505c79eea61d",
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 49383083
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:9aab42bf6a2a068b797fe7d91a5d8d915b10dbbc3d6f2b10492848debfba6044",
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41814849
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:46b933bb70270c8a02fa6b6f87d440f6f1fce1a5a2a719e164f83f7b109f7544",
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41419289
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516",
+                            "gcr.io/google_containers/pause-amd64:3.0"
+                        ],
+                        "SizeBytes": 746888
+                    }
+                ],
+                "VolumesInUse": null,
+                "VolumesAttached": null
+            }
+        },
+        {
+            "name": "k8s-master2",
+            "selfLink": "/api/v1/nodes/k8s-master2",
+            "uid": "e353e06d-bf84-11e7-83ba-005056855b98",
+            "resourceVersion": "166246",
+            "creationTimestamp": "2017-11-02T04:18:32Z",
+            "labels": {
+                "beta.kubernetes.io/arch": "amd64",
+                "beta.kubernetes.io/os": "linux",
+                "kubernetes.io/hostname": "k8s-master2",
+                "node-role.kubernetes.io/master": ""
+            },
+            "annotations": {
+                "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"22:90:af:1a:87:00\"}",
+                "flannel.alpha.coreos.com/backend-type": "vxlan",
+                "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                "flannel.alpha.coreos.com/public-ip": "192.168.141.152",
+                "node.alpha.kubernetes.io/ttl": "0",
+                "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+            },
+            "Spec": {
+                "PodCIDR": "10.244.2.0/24",
+                "ExternalID": "k8s-master2",
+                "ProviderID": "",
+                "Unschedulable": true,
+                "Taints": null,
+                "ConfigSource": null
+            },
+            "Status": {
+                "Capacity": {
+                    "cpu": "4",
+                    "memory": "16432956Ki",
+                    "pods": "110"
+                },
+                "Allocatable": {
+                    "cpu": "4",
+                    "memory": "16330556Ki",
+                    "pods": "110"
+                },
+                "Phase": "",
+                "Conditions": [
+                    {
+                        "Type": "OutOfDisk",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T04:18:32Z",
+                        "Reason": "KubeletHasSufficientDisk",
+                        "Message": "kubelet has sufficient disk space available"
+                    },
+                    {
+                        "Type": "MemoryPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T09:09:52Z",
+                        "Reason": "KubeletHasSufficientMemory",
+                        "Message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "Type": "DiskPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T09:09:52Z",
+                        "Reason": "KubeletHasNoDiskPressure",
+                        "Message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "Type": "Ready",
+                        "Status": "True",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T09:09:52Z",
+                        "Reason": "KubeletReady",
+                        "Message": "kubelet is posting ready status"
+                    }
+                ],
+                "Addresses": [
+                    {
+                        "Type": "InternalIP",
+                        "Address": "192.168.141.152"
+                    },
+                    {
+                        "Type": "Hostname",
+                        "Address": "k8s-master2"
+                    }
+                ],
+                "DaemonEndpoints": {
+                    "KubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "NodeInfo": {
+                    "MachineID": "e51a229627814d6399088d3b57777797",
+                    "SystemUUID": "4205638E-3692-FA64-0679-D0A9B2651220",
+                    "BootID": "c1cd634c-4f76-4920-b3fd-9b635ee02445",
+                    "KernelVersion": "3.10.0-693.5.2.el7.x86_64",
+                    "OSImage": "CentOS Linux 7 (Core)",
+                    "ContainerRuntimeVersion": "docker://Unknown",
+                    "KubeletVersion": "v1.8.1",
+                    "KubeProxyVersion": "v1.8.1",
+                    "OperatingSystem": "linux",
+                    "Architecture": "amd64"
+                },
+                "Images": [
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-apiserver-amd64@sha256:e1f4066f2f8e0cf975d8427842d95c86fd872c239e9ed2534f83121ebdce10a1",
+                            "gcr.io/google_containers/kube-apiserver-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 194040691
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/etcd-amd64@sha256:d83d3545e06fb035db8512e33bd44afb55dea007a3abd7b17742d3ac6d235940",
+                            "gcr.io/google_containers/etcd-amd64:3.0.17"
+                        ],
+                        "SizeBytes": 168935516
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-controller-manager-amd64@sha256:d9a1ab41ba39939511077ce2da44774daafaaecc6460a62358c6e0428831b7d2",
+                            "gcr.io/google_containers/kube-controller-manager-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 129216678
+                    },
+                    {
+                        "Names": [
+                            "nginx@sha256:adea4f68096fded167603ba6663ed615a80e090da68eb3c9e2508c15c8368401",
+                            "nginx:latest"
+                        ],
+                        "SizeBytes": 108362045
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-proxy-amd64@sha256:58fd496116bf3d2790279f9c44040bdfa71791aba7a7a1b5ca35025b5a032b9f",
+                            "gcr.io/google_containers/kube-proxy-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 93137473
+                    },
+                    {
+                        "Names": [
+                            "quay.io/coreos/flannel@sha256:034e1e396d668bd5faea285d8ff6f7f46b483e9efb3a25b46a3c69cf129b60aa",
+                            "quay.io/coreos/flannel:v0.7.1-amd64"
+                        ],
+                        "SizeBytes": 77761467
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-scheduler-amd64@sha256:fbb29b579b8f20075073987023caa146783d85eac66808c0860f99187fc02454",
+                            "gcr.io/google_containers/kube-scheduler-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 54884010
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:1a3fc069de481ae690188f6f1ba4664b5cc7760af37120f70c86505c79eea61d",
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 49383083
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:9aab42bf6a2a068b797fe7d91a5d8d915b10dbbc3d6f2b10492848debfba6044",
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41814849
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:46b933bb70270c8a02fa6b6f87d440f6f1fce1a5a2a719e164f83f7b109f7544",
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41419289
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516",
+                            "gcr.io/google_containers/pause-amd64:3.0"
+                        ],
+                        "SizeBytes": 746888
+                    }
+                ],
+                "VolumesInUse": null,
+                "VolumesAttached": null
+            }
+        },
+        {
+            "name": "k8s-master3",
+            "selfLink": "/api/v1/nodes/k8s-master3",
+            "uid": "72e030dc-bf83-11e7-83ba-005056855b98",
+            "resourceVersion": "166245",
+            "creationTimestamp": "2017-11-02T04:08:14Z",
+            "labels": {
+                "beta.kubernetes.io/arch": "amd64",
+                "beta.kubernetes.io/os": "linux",
+                "kubernetes.io/hostname": "k8s-master3",
+                "node-role.kubernetes.io/master": ""
+            },
+            "annotations": {
+                "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"76:89:08:67:ad:77\"}",
+                "flannel.alpha.coreos.com/backend-type": "vxlan",
+                "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                "flannel.alpha.coreos.com/public-ip": "192.168.141.153",
+                "node.alpha.kubernetes.io/ttl": "0",
+                "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+            },
+            "Spec": {
+                "PodCIDR": "10.244.1.0/24",
+                "ExternalID": "k8s-master3",
+                "ProviderID": "",
+                "Unschedulable": true,
+                "Taints": null,
+                "ConfigSource": null
+            },
+            "Status": {
+                "Capacity": {
+                    "cpu": "4",
+                    "memory": "16432956Ki",
+                    "pods": "110"
+                },
+                "Allocatable": {
+                    "cpu": "4",
+                    "memory": "16330556Ki",
+                    "pods": "110"
+                },
+                "Phase": "",
+                "Conditions": [
+                    {
+                        "Type": "OutOfDisk",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T04:08:14Z",
+                        "Reason": "KubeletHasSufficientDisk",
+                        "Message": "kubelet has sufficient disk space available"
+                    },
+                    {
+                        "Type": "MemoryPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T09:13:16Z",
+                        "Reason": "KubeletHasSufficientMemory",
+                        "Message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "Type": "DiskPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T09:13:16Z",
+                        "Reason": "KubeletHasNoDiskPressure",
+                        "Message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "Type": "Ready",
+                        "Status": "True",
+                        "LastHeartbeatTime": "2017-11-03T03:43:07Z",
+                        "LastTransitionTime": "2017-11-02T09:13:16Z",
+                        "Reason": "KubeletReady",
+                        "Message": "kubelet is posting ready status"
+                    }
+                ],
+                "Addresses": [
+                    {
+                        "Type": "InternalIP",
+                        "Address": "192.168.141.153"
+                    },
+                    {
+                        "Type": "Hostname",
+                        "Address": "k8s-master3"
+                    }
+                ],
+                "DaemonEndpoints": {
+                    "KubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "NodeInfo": {
+                    "MachineID": "e51a229627814d6399088d3b57777797",
+                    "SystemUUID": "4205035E-C07D-E433-486C-478257297C4E",
+                    "BootID": "d67dca5e-9e27-400f-a3c2-a9267b7ee172",
+                    "KernelVersion": "3.10.0-693.5.2.el7.x86_64",
+                    "OSImage": "CentOS Linux 7 (Core)",
+                    "ContainerRuntimeVersion": "docker://Unknown",
+                    "KubeletVersion": "v1.8.1",
+                    "KubeProxyVersion": "v1.8.1",
+                    "OperatingSystem": "linux",
+                    "Architecture": "amd64"
+                },
+                "Images": [
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-apiserver-amd64@sha256:e1f4066f2f8e0cf975d8427842d95c86fd872c239e9ed2534f83121ebdce10a1",
+                            "gcr.io/google_containers/kube-apiserver-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 194040691
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/etcd-amd64@sha256:d83d3545e06fb035db8512e33bd44afb55dea007a3abd7b17742d3ac6d235940",
+                            "gcr.io/google_containers/etcd-amd64:3.0.17"
+                        ],
+                        "SizeBytes": 168935516
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-controller-manager-amd64@sha256:d9a1ab41ba39939511077ce2da44774daafaaecc6460a62358c6e0428831b7d2",
+                            "gcr.io/google_containers/kube-controller-manager-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 129216678
+                    },
+                    {
+                        "Names": [
+                            "nginx@sha256:adea4f68096fded167603ba6663ed615a80e090da68eb3c9e2508c15c8368401",
+                            "nginx:latest"
+                        ],
+                        "SizeBytes": 108362045
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-proxy-amd64@sha256:58fd496116bf3d2790279f9c44040bdfa71791aba7a7a1b5ca35025b5a032b9f",
+                            "gcr.io/google_containers/kube-proxy-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 93137473
+                    },
+                    {
+                        "Names": [
+                            "quay.io/coreos/flannel@sha256:034e1e396d668bd5faea285d8ff6f7f46b483e9efb3a25b46a3c69cf129b60aa",
+                            "quay.io/coreos/flannel:v0.7.1-amd64"
+                        ],
+                        "SizeBytes": 77761467
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-scheduler-amd64@sha256:fbb29b579b8f20075073987023caa146783d85eac66808c0860f99187fc02454",
+                            "gcr.io/google_containers/kube-scheduler-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 54884010
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:1a3fc069de481ae690188f6f1ba4664b5cc7760af37120f70c86505c79eea61d",
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 49383083
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:9aab42bf6a2a068b797fe7d91a5d8d915b10dbbc3d6f2b10492848debfba6044",
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41814849
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:46b933bb70270c8a02fa6b6f87d440f6f1fce1a5a2a719e164f83f7b109f7544",
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41419289
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516",
+                            "gcr.io/google_containers/pause-amd64:3.0"
+                        ],
+                        "SizeBytes": 746888
+                    }
+                ],
+                "VolumesInUse": null,
+                "VolumesAttached": null
+            }
+        },
+        {
+            "name": "k8s-worker1",
+            "selfLink": "/api/v1/nodes/k8s-worker1",
+            "uid": "0c853b73-bf98-11e7-83ba-005056855b98",
+            "resourceVersion": "166242",
+            "creationTimestamp": "2017-11-02T06:35:42Z",
+            "labels": {
+                "beta.kubernetes.io/arch": "amd64",
+                "beta.kubernetes.io/os": "linux",
+                "kubernetes.io/hostname": "k8s-worker1"
+            },
+            "annotations": {
+                "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"3a:59:b0:3a:7d:29\"}",
+                "flannel.alpha.coreos.com/backend-type": "vxlan",
+                "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                "flannel.alpha.coreos.com/public-ip": "192.168.141.154",
+                "node.alpha.kubernetes.io/ttl": "0",
+                "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+            },
+            "Spec": {
+                "PodCIDR": "10.244.4.0/24",
+                "ExternalID": "k8s-worker1",
+                "ProviderID": "",
+                "Unschedulable": false,
+                "Taints": null,
+                "ConfigSource": null
+            },
+            "Status": {
+                "Capacity": {
+                    "cpu": "4",
+                    "memory": "16432956Ki",
+                    "pods": "110"
+                },
+                "Allocatable": {
+                    "cpu": "4",
+                    "memory": "16330556Ki",
+                    "pods": "110"
+                },
+                "Phase": "",
+                "Conditions": [
+                    {
+                        "Type": "OutOfDisk",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:53:23Z",
+                        "LastTransitionTime": "2017-11-02T06:35:24Z",
+                        "Reason": "KubeletHasSufficientDisk",
+                        "Message": "kubelet has sufficient disk space available"
+                    },
+                    {
+                        "Type": "MemoryPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:53:23Z",
+                        "LastTransitionTime": "2017-11-03T02:56:48Z",
+                        "Reason": "KubeletHasSufficientMemory",
+                        "Message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "Type": "DiskPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:53:23Z",
+                        "LastTransitionTime": "2017-11-03T02:56:48Z",
+                        "Reason": "KubeletHasNoDiskPressure",
+                        "Message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "Type": "Ready",
+                        "Status": "True",
+                        "LastHeartbeatTime": "2017-11-03T03:53:23Z",
+                        "LastTransitionTime": "2017-11-03T03:14:27Z",
+                        "Reason": "KubeletReady",
+                        "Message": "kubelet is posting ready status"
+                    }
+                ],
+                "Addresses": [
+                    {
+                        "Type": "InternalIP",
+                        "Address": "192.168.141.154"
+                    },
+                    {
+                        "Type": "Hostname",
+                        "Address": "k8s-worker1"
+                    }
+                ],
+                "DaemonEndpoints": {
+                    "KubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "NodeInfo": {
+                    "MachineID": "e51a229627814d6399088d3b57777797",
+                    "SystemUUID": "4205477D-2BD5-1F03-AAA9-4BF795240501",
+                    "BootID": "b2dac877-83d8-4b5f-b2ad-014ca20dff81",
+                    "KernelVersion": "3.10.0-693.5.2.el7.x86_64",
+                    "OSImage": "CentOS Linux 7 (Core)",
+                    "ContainerRuntimeVersion": "docker://Unknown",
+                    "KubeletVersion": "v1.8.1",
+                    "KubeProxyVersion": "v1.8.1",
+                    "OperatingSystem": "linux",
+                    "Architecture": "amd64"
+                },
+                "Images": [
+                    {
+                        "Names": [
+                            "nginx@sha256:adea4f68096fded167603ba6663ed615a80e090da68eb3c9e2508c15c8368401",
+                            "nginx:latest"
+                        ],
+                        "SizeBytes": 108362045
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-proxy-amd64@sha256:58fd496116bf3d2790279f9c44040bdfa71791aba7a7a1b5ca35025b5a032b9f",
+                            "gcr.io/google_containers/kube-proxy-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 93137473
+                    },
+                    {
+                        "Names": [
+                            "quay.io/coreos/flannel@sha256:034e1e396d668bd5faea285d8ff6f7f46b483e9efb3a25b46a3c69cf129b60aa",
+                            "quay.io/coreos/flannel:v0.7.1-amd64"
+                        ],
+                        "SizeBytes": 77761467
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:1a3fc069de481ae690188f6f1ba4664b5cc7760af37120f70c86505c79eea61d",
+                            "gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 49383083
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:9aab42bf6a2a068b797fe7d91a5d8d915b10dbbc3d6f2b10492848debfba6044",
+                            "gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41814849
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:46b933bb70270c8a02fa6b6f87d440f6f1fce1a5a2a719e164f83f7b109f7544",
+                            "gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5"
+                        ],
+                        "SizeBytes": 41419289
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516",
+                            "gcr.io/google_containers/pause-amd64:3.0"
+                        ],
+                        "SizeBytes": 746888
+                    }
+                ],
+                "VolumesInUse": null,
+                "VolumesAttached": null
+            }
+        },
+        {
+            "name": "k8s-worker2",
+            "selfLink": "/api/v1/nodes/k8s-worker2",
+            "uid": "04362755-bf98-11e7-83ba-005056855b98",
+            "resourceVersion": "166241",
+            "creationTimestamp": "2017-11-02T06:35:28Z",
+            "labels": {
+                "beta.kubernetes.io/arch": "amd64",
+                "beta.kubernetes.io/os": "linux",
+                "kubernetes.io/hostname": "k8s-worker2"
+            },
+            "annotations": {
+                "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"ce:41:fc:13:b9:23\"}",
+                "flannel.alpha.coreos.com/backend-type": "vxlan",
+                "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                "flannel.alpha.coreos.com/public-ip": "192.168.141.155",
+                "node.alpha.kubernetes.io/ttl": "0",
+                "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+            },
+            "Spec": {
+                "PodCIDR": "10.244.3.0/24",
+                "ExternalID": "k8s-worker2",
+                "ProviderID": "",
+                "Unschedulable": false,
+                "Taints": null,
+                "ConfigSource": null
+            },
+            "Status": {
+                "Capacity": {
+                    "cpu": "4",
+                    "memory": "16432956Ki",
+                    "pods": "110"
+                },
+                "Allocatable": {
+                    "cpu": "4",
+                    "memory": "16330556Ki",
+                    "pods": "110"
+                },
+                "Phase": "",
+                "Conditions": [
+                    {
+                        "Type": "OutOfDisk",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:23Z",
+                        "LastTransitionTime": "2017-11-02T06:35:10Z",
+                        "Reason": "KubeletHasSufficientDisk",
+                        "Message": "kubelet has sufficient disk space available"
+                    },
+                    {
+                        "Type": "MemoryPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:23Z",
+                        "LastTransitionTime": "2017-11-03T02:56:48Z",
+                        "Reason": "KubeletHasSufficientMemory",
+                        "Message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "Type": "DiskPressure",
+                        "Status": "False",
+                        "LastHeartbeatTime": "2017-11-03T03:43:23Z",
+                        "LastTransitionTime": "2017-11-03T02:56:48Z",
+                        "Reason": "KubeletHasNoDiskPressure",
+                        "Message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "Type": "Ready",
+                        "Status": "True",
+                        "LastHeartbeatTime": "2017-11-03T03:43:23Z",
+                        "LastTransitionTime": "2017-11-03T02:56:48Z",
+                        "Reason": "KubeletReady",
+                        "Message": "kubelet is posting ready status"
+                    }
+                ],
+                "Addresses": [
+                    {
+                        "Type": "InternalIP",
+                        "Address": "192.168.141.155"
+                    },
+                    {
+                        "Type": "Hostname",
+                        "Address": "k8s-worker2"
+                    }
+                ],
+                "DaemonEndpoints": {
+                    "KubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "NodeInfo": {
+                    "MachineID": "e51a229627814d6399088d3b57777797",
+                    "SystemUUID": "420565A5-CB0B-5FBF-764F-9E45438371DB",
+                    "BootID": "55fb0af6-6638-4cb6-adb1-d62349c1bcac",
+                    "KernelVersion": "3.10.0-693.5.2.el7.x86_64",
+                    "OSImage": "CentOS Linux 7 (Core)",
+                    "ContainerRuntimeVersion": "docker://Unknown",
+                    "KubeletVersion": "v1.8.1",
+                    "KubeProxyVersion": "v1.8.1",
+                    "OperatingSystem": "linux",
+                    "Architecture": "amd64"
+                },
+                "Images": [
+                    {
+                        "Names": [
+                            "nginx@sha256:adea4f68096fded167603ba6663ed615a80e090da68eb3c9e2508c15c8368401",
+                            "nginx:latest"
+                        ],
+                        "SizeBytes": 108362045
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/kube-proxy-amd64@sha256:58fd496116bf3d2790279f9c44040bdfa71791aba7a7a1b5ca35025b5a032b9f",
+                            "gcr.io/google_containers/kube-proxy-amd64:v1.8.1"
+                        ],
+                        "SizeBytes": 93137473
+                    },
+                    {
+                        "Names": [
+                            "quay.io/coreos/flannel@sha256:034e1e396d668bd5faea285d8ff6f7f46b483e9efb3a25b46a3c69cf129b60aa",
+                            "quay.io/coreos/flannel:v0.7.1-amd64"
+                        ],
+                        "SizeBytes": 77761467
+                    },
+                    {
+                        "Names": [
+                            "gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516",
+                            "gcr.io/google_containers/pause-amd64:3.0"
+                        ],
+                        "SizeBytes": 746888
+                    }
+                ],
+                "VolumesInUse": null,
+                "VolumesAttached": null
+            }
+        }
+    ]
+}

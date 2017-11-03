@@ -1,0 +1,2 @@
+==== START logs for container nginx3 of pod default/nginx3-9f8849c9c-grxzn ====
+==== END logs for container nginx3 of pod default/nginx3-9f8849c9c-grxzn ====

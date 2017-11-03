@@ -1,0 +1,2 @@
+==== START logs for container nginx265 of pod default/nginx265-d77844b9c-8ns4p ====
+==== END logs for container nginx265 of pod default/nginx265-d77844b9c-8ns4p ====

@@ -1,0 +1,2 @@
+==== START logs for container nginx264 of pod default/nginx264-596875bf-7pzdp ====
+==== END logs for container nginx264 of pod default/nginx264-596875bf-7pzdp ====

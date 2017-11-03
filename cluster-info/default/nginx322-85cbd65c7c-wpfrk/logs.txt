@@ -1,0 +1,2 @@
+==== START logs for container nginx322 of pod default/nginx322-85cbd65c7c-wpfrk ====
+==== END logs for container nginx322 of pod default/nginx322-85cbd65c7c-wpfrk ====

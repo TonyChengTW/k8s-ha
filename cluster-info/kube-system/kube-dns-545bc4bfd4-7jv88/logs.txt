@@ -1,0 +1,69 @@
+==== START logs for container kubedns of pod kube-system/kube-dns-545bc4bfd4-7jv88 ====
+I1102 06:03:17.024293       1 dns.go:48] version: 1.14.4-2-g5584e04
+I1102 06:03:17.025421       1 server.go:70] Using configuration read from directory: /kube-dns-config with period 10s
+I1102 06:03:17.025475       1 server.go:113] FLAG: --alsologtostderr="false"
+I1102 06:03:17.025488       1 server.go:113] FLAG: --config-dir="/kube-dns-config"
+I1102 06:03:17.025496       1 server.go:113] FLAG: --config-map=""
+I1102 06:03:17.025501       1 server.go:113] FLAG: --config-map-namespace="kube-system"
+I1102 06:03:17.025506       1 server.go:113] FLAG: --config-period="10s"
+I1102 06:03:17.025514       1 server.go:113] FLAG: --dns-bind-address="0.0.0.0"
+I1102 06:03:17.025519       1 server.go:113] FLAG: --dns-port="10053"
+I1102 06:03:17.025527       1 server.go:113] FLAG: --domain="cluster.local."
+I1102 06:03:17.025534       1 server.go:113] FLAG: --federations=""
+I1102 06:03:17.025541       1 server.go:113] FLAG: --healthz-port="8081"
+I1102 06:03:17.025547       1 server.go:113] FLAG: --initial-sync-timeout="1m0s"
+I1102 06:03:17.025553       1 server.go:113] FLAG: --kube-master-url=""
+I1102 06:03:17.025560       1 server.go:113] FLAG: --kubecfg-file=""
+I1102 06:03:17.025564       1 server.go:113] FLAG: --log-backtrace-at=":0"
+I1102 06:03:17.025571       1 server.go:113] FLAG: --log-dir=""
+I1102 06:03:17.025576       1 server.go:113] FLAG: --log-flush-frequency="5s"
+I1102 06:03:17.025582       1 server.go:113] FLAG: --logtostderr="true"
+I1102 06:03:17.025587       1 server.go:113] FLAG: --nameservers=""
+I1102 06:03:17.025591       1 server.go:113] FLAG: --stderrthreshold="2"
+I1102 06:03:17.025597       1 server.go:113] FLAG: --v="2"
+I1102 06:03:17.025602       1 server.go:113] FLAG: --version="false"
+I1102 06:03:17.025611       1 server.go:113] FLAG: --vmodule=""
+I1102 06:03:17.025729       1 server.go:176] Starting SkyDNS server (0.0.0.0:10053)
+I1102 06:03:17.025963       1 server.go:198] Skydns metrics enabled (/metrics:10055)
+I1102 06:03:17.025977       1 dns.go:147] Starting endpointsController
+I1102 06:03:17.025980       1 dns.go:150] Starting serviceController
+I1102 06:03:17.026075       1 logs.go:41] skydns: ready for queries on cluster.local. for tcp://0.0.0.0:10053 [rcache 0]
+I1102 06:03:17.026107       1 logs.go:41] skydns: ready for queries on cluster.local. for udp://0.0.0.0:10053 [rcache 0]
+I1102 06:03:17.526135       1 dns.go:174] Waiting for services and endpoints to be initialized from apiserver...
+I1102 06:03:18.026136       1 dns.go:174] Waiting for services and endpoints to be initialized from apiserver...
+I1102 06:03:18.526131       1 dns.go:174] Waiting for services and endpoints to be initialized from apiserver...
+I1102 06:03:19.026156       1 dns.go:174] Waiting for services and endpoints to be initialized from apiserver...
+I1102 06:03:19.526137       1 dns.go:174] Waiting for services and endpoints to be initialized from apiserver...
+I1102 06:03:20.026151       1 dns.go:174] Waiting for services and endpoints to be initialized from apiserver...
+I1102 06:03:20.526145       1 dns.go:171] Initialized services and endpoints from apiserver
+I1102 06:03:20.526162       1 server.go:129] Setting up Healthz Handler (/readiness)
+I1102 06:03:20.526168       1 server.go:134] Setting up cache handler (/cache)
+I1102 06:03:20.526185       1 server.go:120] Status HTTP port 8081
+W1102 07:17:07.240681       1 reflector.go:319] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: watch of *v1.Service ended with: too old resource version: 14264 (21098)
+W1102 08:10:54.873496       1 reflector.go:319] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: watch of *v1.Service ended with: very short watch
+W1103 02:19:18.201442       1 reflector.go:319] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: watch of *v1.Service ended with: very short watch
+==== END logs for container kubedns of pod kube-system/kube-dns-545bc4bfd4-7jv88 ====
+==== START logs for container dnsmasq of pod kube-system/kube-dns-545bc4bfd4-7jv88 ====
+I1102 06:03:17.110321       1 main.go:76] opts: {{/usr/sbin/dnsmasq [-k --cache-size=1000 --log-facility=- --server=/cluster.local/127.0.0.1#10053 --server=/in-addr.arpa/127.0.0.1#10053 --server=/ip6.arpa/127.0.0.1#10053] true} /etc/k8s/dns/dnsmasq-nanny 10000000000}
+I1102 06:03:17.110413       1 nanny.go:86] Starting dnsmasq [-k --cache-size=1000 --log-facility=- --server=/cluster.local/127.0.0.1#10053 --server=/in-addr.arpa/127.0.0.1#10053 --server=/ip6.arpa/127.0.0.1#10053]
+I1102 06:03:17.119197       1 nanny.go:111] 
+I1102 06:03:17.119212       1 nanny.go:108] dnsmasq[13]: started, version 2.78-security-prerelease cachesize 1000
+W1102 06:03:17.119226       1 nanny.go:112] Got EOF from stdout
+I1102 06:03:17.119234       1 nanny.go:108] dnsmasq[13]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect inotify
+I1102 06:03:17.119244       1 nanny.go:108] dnsmasq[13]: using nameserver 127.0.0.1#10053 for domain ip6.arpa 
+I1102 06:03:17.119248       1 nanny.go:108] dnsmasq[13]: using nameserver 127.0.0.1#10053 for domain in-addr.arpa 
+I1102 06:03:17.119251       1 nanny.go:108] dnsmasq[13]: using nameserver 127.0.0.1#10053 for domain cluster.local 
+I1102 06:03:17.119255       1 nanny.go:108] dnsmasq[13]: reading /etc/resolv.conf
+I1102 06:03:17.119258       1 nanny.go:108] dnsmasq[13]: using nameserver 127.0.0.1#10053 for domain ip6.arpa 
+I1102 06:03:17.119261       1 nanny.go:108] dnsmasq[13]: using nameserver 127.0.0.1#10053 for domain in-addr.arpa 
+I1102 06:03:17.119264       1 nanny.go:108] dnsmasq[13]: using nameserver 127.0.0.1#10053 for domain cluster.local 
+I1102 06:03:17.119267       1 nanny.go:108] dnsmasq[13]: using nameserver 168.95.1.1#53
+I1102 06:03:17.119297       1 nanny.go:108] dnsmasq[13]: read /etc/hosts - 7 addresses
+==== END logs for container dnsmasq of pod kube-system/kube-dns-545bc4bfd4-7jv88 ====
+==== START logs for container sidecar of pod kube-system/kube-dns-545bc4bfd4-7jv88 ====
+ERROR: logging before flag.Parse: I1102 06:03:19.528321       1 main.go:48] Version v1.14.4-2-g5584e04
+ERROR: logging before flag.Parse: I1102 06:03:19.528389       1 server.go:45] Starting server (options {DnsMasqPort:53 DnsMasqAddr:127.0.0.1 DnsMasqPollIntervalMs:5000 Probes:[{Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1} {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}] PrometheusAddr:0.0.0.0 PrometheusPort:10054 PrometheusPath:/metrics PrometheusNamespace:kubedns})
+ERROR: logging before flag.Parse: I1102 06:03:19.528436       1 dnsprobe.go:75] Starting dnsProbe {Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}
+ERROR: logging before flag.Parse: I1102 06:03:19.528538       1 dnsprobe.go:75] Starting dnsProbe {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}
+ERROR: logging before flag.Parse: W1102 23:42:32.847046       1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:38636->127.0.0.1:53: i/o timeout
+==== END logs for container sidecar of pod kube-system/kube-dns-545bc4bfd4-7jv88 ====

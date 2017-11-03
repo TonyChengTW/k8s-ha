@@ -1,0 +1,6 @@
+==== START logs for container kube-flannel of pod kube-system/kube-flannel-ds-9sn9d ====
+Request log error: an error on the server ("unknown") has prevented the request from succeeding (get pods kube-flannel-ds-9sn9d)
+==== END logs for container kube-flannel of pod kube-system/kube-flannel-ds-9sn9d ====
+==== START logs for container install-cni of pod kube-system/kube-flannel-ds-9sn9d ====
+Request log error: an error on the server ("unknown") has prevented the request from succeeding (get pods kube-flannel-ds-9sn9d)
+==== END logs for container install-cni of pod kube-system/kube-flannel-ds-9sn9d ====

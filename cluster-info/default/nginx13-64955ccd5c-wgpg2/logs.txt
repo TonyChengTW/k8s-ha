@@ -1,0 +1,2 @@
+==== START logs for container nginx13 of pod default/nginx13-64955ccd5c-wgpg2 ====
+==== END logs for container nginx13 of pod default/nginx13-64955ccd5c-wgpg2 ====

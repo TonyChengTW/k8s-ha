@@ -1,0 +1,2 @@
+==== START logs for container nginx100 of pod default/nginx100-fc8966b57-vp8mq ====
+==== END logs for container nginx100 of pod default/nginx100-fc8966b57-vp8mq ====

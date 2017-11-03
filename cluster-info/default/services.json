@@ -1,0 +1,50 @@
+{
+    "selfLink": "/api/v1/namespaces/default/services",
+    "resourceVersion": "166286",
+    "Items": [
+        {
+            "name": "kubernetes",
+            "namespace": "default",
+            "selfLink": "/api/v1/namespaces/default/services/kubernetes",
+            "uid": "2465c348-bf79-11e7-bb72-005056855b98",
+            "resourceVersion": "50",
+            "creationTimestamp": "2017-11-02T02:54:28Z",
+            "labels": {
+                "component": "apiserver",
+                "provider": "kubernetes"
+            },
+            "Spec": {
+                "Type": "ClusterIP",
+                "Ports": [
+                    {
+                        "Name": "https",
+                        "Protocol": "TCP",
+                        "Port": 443,
+                        "TargetPort": 6443,
+                        "NodePort": 0
+                    }
+                ],
+                "Selector": null,
+                "ClusterIP": "10.96.0.1",
+                "ExternalName": "",
+                "ExternalIPs": null,
+                "LoadBalancerIP": "",
+                "SessionAffinity": "ClientIP",
+                "SessionAffinityConfig": {
+                    "ClientIP": {
+                        "TimeoutSeconds": 10800
+                    }
+                },
+                "LoadBalancerSourceRanges": null,
+                "ExternalTrafficPolicy": "",
+                "HealthCheckNodePort": 0,
+                "PublishNotReadyAddresses": false
+            },
+            "Status": {
+                "LoadBalancer": {
+                    "Ingress": null
+                }
+            }
+        }
+    ]
+}

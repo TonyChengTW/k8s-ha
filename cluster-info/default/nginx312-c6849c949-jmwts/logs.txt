@@ -1,0 +1,2 @@
+==== START logs for container nginx312 of pod default/nginx312-c6849c949-jmwts ====
+==== END logs for container nginx312 of pod default/nginx312-c6849c949-jmwts ====

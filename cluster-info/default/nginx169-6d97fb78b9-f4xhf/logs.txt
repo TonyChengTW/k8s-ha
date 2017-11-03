@@ -1,0 +1,2 @@
+==== START logs for container nginx169 of pod default/nginx169-6d97fb78b9-f4xhf ====
+==== END logs for container nginx169 of pod default/nginx169-6d97fb78b9-f4xhf ====

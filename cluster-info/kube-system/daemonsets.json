@@ -1,0 +1,534 @@
+{
+    "selfLink": "/apis/extensions/v1beta1/namespaces/kube-system/daemonsets",
+    "resourceVersion": "166256",
+    "Items": [
+        {
+            "name": "kube-flannel-ds",
+            "namespace": "kube-system",
+            "selfLink": "/apis/extensions/v1beta1/namespaces/kube-system/daemonsets/kube-flannel-ds",
+            "uid": "09af2b12-bf7a-11e7-83ba-005056855b98",
+            "resourceVersion": "158617",
+            "generation": 1,
+            "creationTimestamp": "2017-11-02T03:00:52Z",
+            "labels": {
+                "app": "flannel",
+                "tier": "node"
+            },
+            "Spec": {
+                "Selector": {
+                    "matchLabels": {
+                        "app": "flannel",
+                        "tier": "node"
+                    }
+                },
+                "Template": {
+                    "creationTimestamp": null,
+                    "labels": {
+                        "app": "flannel",
+                        "tier": "node"
+                    },
+                    "Spec": {
+                        "Volumes": [
+                            {
+                                "Name": "run",
+                                "HostPath": {
+                                    "Path": "/run",
+                                    "Type": ""
+                                },
+                                "EmptyDir": null,
+                                "GCEPersistentDisk": null,
+                                "AWSElasticBlockStore": null,
+                                "GitRepo": null,
+                                "Secret": null,
+                                "NFS": null,
+                                "ISCSI": null,
+                                "Glusterfs": null,
+                                "PersistentVolumeClaim": null,
+                                "RBD": null,
+                                "Quobyte": null,
+                                "FlexVolume": null,
+                                "Cinder": null,
+                                "CephFS": null,
+                                "Flocker": null,
+                                "DownwardAPI": null,
+                                "FC": null,
+                                "AzureFile": null,
+                                "ConfigMap": null,
+                                "VsphereVolume": null,
+                                "AzureDisk": null,
+                                "PhotonPersistentDisk": null,
+                                "Projected": null,
+                                "PortworxVolume": null,
+                                "ScaleIO": null,
+                                "StorageOS": null
+                            },
+                            {
+                                "Name": "cni",
+                                "HostPath": {
+                                    "Path": "/etc/cni/net.d",
+                                    "Type": ""
+                                },
+                                "EmptyDir": null,
+                                "GCEPersistentDisk": null,
+                                "AWSElasticBlockStore": null,
+                                "GitRepo": null,
+                                "Secret": null,
+                                "NFS": null,
+                                "ISCSI": null,
+                                "Glusterfs": null,
+                                "PersistentVolumeClaim": null,
+                                "RBD": null,
+                                "Quobyte": null,
+                                "FlexVolume": null,
+                                "Cinder": null,
+                                "CephFS": null,
+                                "Flocker": null,
+                                "DownwardAPI": null,
+                                "FC": null,
+                                "AzureFile": null,
+                                "ConfigMap": null,
+                                "VsphereVolume": null,
+                                "AzureDisk": null,
+                                "PhotonPersistentDisk": null,
+                                "Projected": null,
+                                "PortworxVolume": null,
+                                "ScaleIO": null,
+                                "StorageOS": null
+                            },
+                            {
+                                "Name": "flannel-cfg",
+                                "HostPath": null,
+                                "EmptyDir": null,
+                                "GCEPersistentDisk": null,
+                                "AWSElasticBlockStore": null,
+                                "GitRepo": null,
+                                "Secret": null,
+                                "NFS": null,
+                                "ISCSI": null,
+                                "Glusterfs": null,
+                                "PersistentVolumeClaim": null,
+                                "RBD": null,
+                                "Quobyte": null,
+                                "FlexVolume": null,
+                                "Cinder": null,
+                                "CephFS": null,
+                                "Flocker": null,
+                                "DownwardAPI": null,
+                                "FC": null,
+                                "AzureFile": null,
+                                "ConfigMap": {
+                                    "Name": "kube-flannel-cfg",
+                                    "Items": null,
+                                    "DefaultMode": 420,
+                                    "Optional": null
+                                },
+                                "VsphereVolume": null,
+                                "AzureDisk": null,
+                                "PhotonPersistentDisk": null,
+                                "Projected": null,
+                                "PortworxVolume": null,
+                                "ScaleIO": null,
+                                "StorageOS": null
+                            }
+                        ],
+                        "InitContainers": null,
+                        "Containers": [
+                            {
+                                "Name": "kube-flannel",
+                                "Image": "quay.io/coreos/flannel:v0.7.1-amd64",
+                                "Command": [
+                                    "/opt/bin/flanneld",
+                                    "--ip-masq",
+                                    "--kube-subnet-mgr"
+                                ],
+                                "Args": null,
+                                "WorkingDir": "",
+                                "Ports": null,
+                                "EnvFrom": null,
+                                "Env": [
+                                    {
+                                        "Name": "POD_NAME",
+                                        "Value": "",
+                                        "ValueFrom": {
+                                            "FieldRef": {
+                                                "APIVersion": "v1",
+                                                "FieldPath": "metadata.name"
+                                            },
+                                            "ResourceFieldRef": null,
+                                            "ConfigMapKeyRef": null,
+                                            "SecretKeyRef": null
+                                        }
+                                    },
+                                    {
+                                        "Name": "POD_NAMESPACE",
+                                        "Value": "",
+                                        "ValueFrom": {
+                                            "FieldRef": {
+                                                "APIVersion": "v1",
+                                                "FieldPath": "metadata.namespace"
+                                            },
+                                            "ResourceFieldRef": null,
+                                            "ConfigMapKeyRef": null,
+                                            "SecretKeyRef": null
+                                        }
+                                    }
+                                ],
+                                "Resources": {
+                                    "Limits": null,
+                                    "Requests": null
+                                },
+                                "VolumeMounts": [
+                                    {
+                                        "Name": "run",
+                                        "ReadOnly": false,
+                                        "MountPath": "/run",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    },
+                                    {
+                                        "Name": "flannel-cfg",
+                                        "ReadOnly": false,
+                                        "MountPath": "/etc/kube-flannel/",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    }
+                                ],
+                                "LivenessProbe": null,
+                                "ReadinessProbe": null,
+                                "Lifecycle": null,
+                                "TerminationMessagePath": "/dev/termination-log",
+                                "TerminationMessagePolicy": "File",
+                                "ImagePullPolicy": "IfNotPresent",
+                                "SecurityContext": {
+                                    "Capabilities": null,
+                                    "Privileged": true,
+                                    "SELinuxOptions": null,
+                                    "RunAsUser": null,
+                                    "RunAsNonRoot": null,
+                                    "ReadOnlyRootFilesystem": null,
+                                    "AllowPrivilegeEscalation": null
+                                },
+                                "Stdin": false,
+                                "StdinOnce": false,
+                                "TTY": false
+                            },
+                            {
+                                "Name": "install-cni",
+                                "Image": "quay.io/coreos/flannel:v0.7.1-amd64",
+                                "Command": [
+                                    "/bin/sh",
+                                    "-c",
+                                    "set -e -x; cp -f /etc/kube-flannel/cni-conf.json /etc/cni/net.d/10-flannel.conf; while true; do sleep 3600; done"
+                                ],
+                                "Args": null,
+                                "WorkingDir": "",
+                                "Ports": null,
+                                "EnvFrom": null,
+                                "Env": null,
+                                "Resources": {
+                                    "Limits": null,
+                                    "Requests": null
+                                },
+                                "VolumeMounts": [
+                                    {
+                                        "Name": "cni",
+                                        "ReadOnly": false,
+                                        "MountPath": "/etc/cni/net.d",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    },
+                                    {
+                                        "Name": "flannel-cfg",
+                                        "ReadOnly": false,
+                                        "MountPath": "/etc/kube-flannel/",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    }
+                                ],
+                                "LivenessProbe": null,
+                                "ReadinessProbe": null,
+                                "Lifecycle": null,
+                                "TerminationMessagePath": "/dev/termination-log",
+                                "TerminationMessagePolicy": "File",
+                                "ImagePullPolicy": "IfNotPresent",
+                                "SecurityContext": null,
+                                "Stdin": false,
+                                "StdinOnce": false,
+                                "TTY": false
+                            }
+                        ],
+                        "RestartPolicy": "Always",
+                        "TerminationGracePeriodSeconds": 30,
+                        "ActiveDeadlineSeconds": null,
+                        "DNSPolicy": "ClusterFirst",
+                        "NodeSelector": {
+                            "beta.kubernetes.io/arch": "amd64"
+                        },
+                        "ServiceAccountName": "flannel",
+                        "AutomountServiceAccountToken": null,
+                        "NodeName": "",
+                        "SecurityContext": {
+                            "HostNetwork": true,
+                            "HostPID": false,
+                            "HostIPC": false,
+                            "SELinuxOptions": null,
+                            "RunAsUser": null,
+                            "RunAsNonRoot": null,
+                            "SupplementalGroups": null,
+                            "FSGroup": null
+                        },
+                        "ImagePullSecrets": null,
+                        "Hostname": "",
+                        "Subdomain": "",
+                        "Affinity": null,
+                        "SchedulerName": "default-scheduler",
+                        "Tolerations": [
+                            {
+                                "Key": "node-role.kubernetes.io/master",
+                                "Operator": "Exists",
+                                "Value": "",
+                                "Effect": "NoSchedule",
+                                "TolerationSeconds": null
+                            }
+                        ],
+                        "HostAliases": null,
+                        "PriorityClassName": "",
+                        "Priority": null
+                    }
+                },
+                "UpdateStrategy": {
+                    "Type": "OnDelete",
+                    "RollingUpdate": null
+                },
+                "MinReadySeconds": 0,
+                "TemplateGeneration": 1,
+                "RevisionHistoryLimit": 10
+            },
+            "Status": {
+                "CurrentNumberScheduled": 5,
+                "NumberMisscheduled": 0,
+                "DesiredNumberScheduled": 5,
+                "NumberReady": 4,
+                "ObservedGeneration": 1,
+                "UpdatedNumberScheduled": 5,
+                "NumberAvailable": 4,
+                "NumberUnavailable": 1,
+                "CollisionCount": null
+            }
+        },
+        {
+            "name": "kube-proxy",
+            "namespace": "kube-system",
+            "selfLink": "/apis/extensions/v1beta1/namespaces/kube-system/daemonsets/kube-proxy",
+            "uid": "266255f6-bf79-11e7-bb72-005056855b98",
+            "resourceVersion": "158618",
+            "generation": 1,
+            "creationTimestamp": "2017-11-02T02:54:31Z",
+            "labels": {
+                "k8s-app": "kube-proxy"
+            },
+            "Spec": {
+                "Selector": {
+                    "matchLabels": {
+                        "k8s-app": "kube-proxy"
+                    }
+                },
+                "Template": {
+                    "creationTimestamp": null,
+                    "labels": {
+                        "k8s-app": "kube-proxy"
+                    },
+                    "Spec": {
+                        "Volumes": [
+                            {
+                                "Name": "kube-proxy",
+                                "HostPath": null,
+                                "EmptyDir": null,
+                                "GCEPersistentDisk": null,
+                                "AWSElasticBlockStore": null,
+                                "GitRepo": null,
+                                "Secret": null,
+                                "NFS": null,
+                                "ISCSI": null,
+                                "Glusterfs": null,
+                                "PersistentVolumeClaim": null,
+                                "RBD": null,
+                                "Quobyte": null,
+                                "FlexVolume": null,
+                                "Cinder": null,
+                                "CephFS": null,
+                                "Flocker": null,
+                                "DownwardAPI": null,
+                                "FC": null,
+                                "AzureFile": null,
+                                "ConfigMap": {
+                                    "Name": "kube-proxy",
+                                    "Items": null,
+                                    "DefaultMode": 420,
+                                    "Optional": null
+                                },
+                                "VsphereVolume": null,
+                                "AzureDisk": null,
+                                "PhotonPersistentDisk": null,
+                                "Projected": null,
+                                "PortworxVolume": null,
+                                "ScaleIO": null,
+                                "StorageOS": null
+                            },
+                            {
+                                "Name": "xtables-lock",
+                                "HostPath": {
+                                    "Path": "/run/xtables.lock",
+                                    "Type": "FileOrCreate"
+                                },
+                                "EmptyDir": null,
+                                "GCEPersistentDisk": null,
+                                "AWSElasticBlockStore": null,
+                                "GitRepo": null,
+                                "Secret": null,
+                                "NFS": null,
+                                "ISCSI": null,
+                                "Glusterfs": null,
+                                "PersistentVolumeClaim": null,
+                                "RBD": null,
+                                "Quobyte": null,
+                                "FlexVolume": null,
+                                "Cinder": null,
+                                "CephFS": null,
+                                "Flocker": null,
+                                "DownwardAPI": null,
+                                "FC": null,
+                                "AzureFile": null,
+                                "ConfigMap": null,
+                                "VsphereVolume": null,
+                                "AzureDisk": null,
+                                "PhotonPersistentDisk": null,
+                                "Projected": null,
+                                "PortworxVolume": null,
+                                "ScaleIO": null,
+                                "StorageOS": null
+                            }
+                        ],
+                        "InitContainers": null,
+                        "Containers": [
+                            {
+                                "Name": "kube-proxy",
+                                "Image": "gcr.io/google_containers/kube-proxy-amd64:v1.8.1",
+                                "Command": [
+                                    "/usr/local/bin/kube-proxy",
+                                    "--kubeconfig=/var/lib/kube-proxy/kubeconfig.conf",
+                                    "--cluster-cidr=10.244.0.0/16"
+                                ],
+                                "Args": null,
+                                "WorkingDir": "",
+                                "Ports": null,
+                                "EnvFrom": null,
+                                "Env": null,
+                                "Resources": {
+                                    "Limits": null,
+                                    "Requests": null
+                                },
+                                "VolumeMounts": [
+                                    {
+                                        "Name": "kube-proxy",
+                                        "ReadOnly": false,
+                                        "MountPath": "/var/lib/kube-proxy",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    },
+                                    {
+                                        "Name": "xtables-lock",
+                                        "ReadOnly": false,
+                                        "MountPath": "/run/xtables.lock",
+                                        "SubPath": "",
+                                        "MountPropagation": null
+                                    }
+                                ],
+                                "LivenessProbe": null,
+                                "ReadinessProbe": null,
+                                "Lifecycle": null,
+                                "TerminationMessagePath": "/dev/termination-log",
+                                "TerminationMessagePolicy": "File",
+                                "ImagePullPolicy": "IfNotPresent",
+                                "SecurityContext": {
+                                    "Capabilities": null,
+                                    "Privileged": true,
+                                    "SELinuxOptions": null,
+                                    "RunAsUser": null,
+                                    "RunAsNonRoot": null,
+                                    "ReadOnlyRootFilesystem": null,
+                                    "AllowPrivilegeEscalation": null
+                                },
+                                "Stdin": false,
+                                "StdinOnce": false,
+                                "TTY": false
+                            }
+                        ],
+                        "RestartPolicy": "Always",
+                        "TerminationGracePeriodSeconds": 30,
+                        "ActiveDeadlineSeconds": null,
+                        "DNSPolicy": "ClusterFirst",
+                        "NodeSelector": null,
+                        "ServiceAccountName": "kube-proxy",
+                        "AutomountServiceAccountToken": null,
+                        "NodeName": "",
+                        "SecurityContext": {
+                            "HostNetwork": true,
+                            "HostPID": false,
+                            "HostIPC": false,
+                            "SELinuxOptions": null,
+                            "RunAsUser": null,
+                            "RunAsNonRoot": null,
+                            "SupplementalGroups": null,
+                            "FSGroup": null
+                        },
+                        "ImagePullSecrets": null,
+                        "Hostname": "",
+                        "Subdomain": "",
+                        "Affinity": null,
+                        "SchedulerName": "default-scheduler",
+                        "Tolerations": [
+                            {
+                                "Key": "node-role.kubernetes.io/master",
+                                "Operator": "",
+                                "Value": "",
+                                "Effect": "NoSchedule",
+                                "TolerationSeconds": null
+                            },
+                            {
+                                "Key": "node.cloudprovider.kubernetes.io/uninitialized",
+                                "Operator": "",
+                                "Value": "true",
+                                "Effect": "NoSchedule",
+                                "TolerationSeconds": null
+                            }
+                        ],
+                        "HostAliases": null,
+                        "PriorityClassName": "",
+                        "Priority": null
+                    }
+                },
+                "UpdateStrategy": {
+                    "Type": "RollingUpdate",
+                    "RollingUpdate": {
+                        "MaxUnavailable": 1
+                    }
+                },
+                "MinReadySeconds": 0,
+                "TemplateGeneration": 1,
+                "RevisionHistoryLimit": 10
+            },
+            "Status": {
+                "CurrentNumberScheduled": 5,
+                "NumberMisscheduled": 0,
+                "DesiredNumberScheduled": 5,
+                "NumberReady": 4,
+                "ObservedGeneration": 1,
+                "UpdatedNumberScheduled": 5,
+                "NumberAvailable": 4,
+                "NumberUnavailable": 1,
+                "CollisionCount": null
+            }
+        }
+    ]
+}

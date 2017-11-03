@@ -1,0 +1,56 @@
+{
+    "selfLink": "/api/v1/namespaces/kube-system/services",
+    "resourceVersion": "166256",
+    "Items": [
+        {
+            "name": "kube-dns",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/services/kube-dns",
+            "uid": "265e9d14-bf79-11e7-bb72-005056855b98",
+            "resourceVersion": "174",
+            "creationTimestamp": "2017-11-02T02:54:31Z",
+            "labels": {
+                "k8s-app": "kube-dns",
+                "kubernetes.io/cluster-service": "true",
+                "kubernetes.io/name": "KubeDNS"
+            },
+            "Spec": {
+                "Type": "ClusterIP",
+                "Ports": [
+                    {
+                        "Name": "dns",
+                        "Protocol": "UDP",
+                        "Port": 53,
+                        "TargetPort": 53,
+                        "NodePort": 0
+                    },
+                    {
+                        "Name": "dns-tcp",
+                        "Protocol": "TCP",
+                        "Port": 53,
+                        "TargetPort": 53,
+                        "NodePort": 0
+                    }
+                ],
+                "Selector": {
+                    "k8s-app": "kube-dns"
+                },
+                "ClusterIP": "10.96.0.10",
+                "ExternalName": "",
+                "ExternalIPs": null,
+                "LoadBalancerIP": "",
+                "SessionAffinity": "None",
+                "SessionAffinityConfig": null,
+                "LoadBalancerSourceRanges": null,
+                "ExternalTrafficPolicy": "",
+                "HealthCheckNodePort": 0,
+                "PublishNotReadyAddresses": false
+            },
+            "Status": {
+                "LoadBalancer": {
+                    "Ingress": null
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+==== START logs for container nginx180 of pod default/nginx180-d5484d98f-f8xtr ====
+==== END logs for container nginx180 of pod default/nginx180-d5484d98f-f8xtr ====

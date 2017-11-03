@@ -1,0 +1,2 @@
+==== START logs for container nginx120 of pod default/nginx120-77976984f-cxblv ====
+==== END logs for container nginx120 of pod default/nginx120-77976984f-cxblv ====

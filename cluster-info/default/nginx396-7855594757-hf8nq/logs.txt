@@ -1,0 +1,2 @@
+==== START logs for container nginx396 of pod default/nginx396-7855594757-hf8nq ====
+==== END logs for container nginx396 of pod default/nginx396-7855594757-hf8nq ====

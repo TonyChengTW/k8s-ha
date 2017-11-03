@@ -1,0 +1,3 @@
+==== START logs for container kube-scheduler of pod kube-system/kube-scheduler-k8s-master1 ====
+Request log error: an error on the server ("unknown") has prevented the request from succeeding (get pods kube-scheduler-k8s-master1)
+==== END logs for container kube-scheduler of pod kube-system/kube-scheduler-k8s-master1 ====

@@ -1,0 +1,4 @@
+==== START logs for container kube-controller-manager of pod kube-system/kube-controller-manager-k8s-master2 ====
+I1102 09:13:03.688034       1 controllermanager.go:109] Version: v1.8.1
+I1102 09:13:03.691818       1 leaderelection.go:174] attempting to acquire leader lease...
+==== END logs for container kube-controller-manager of pod kube-system/kube-controller-manager-k8s-master2 ====

@@ -1,0 +1,1464 @@
+{
+    "selfLink": "/api/v1/namespaces/kube-system/events",
+    "resourceVersion": "166254",
+    "Items": [
+        {
+            "name": "kube-apiserver-k8s-master1.14f37554d009108f",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-apiserver-k8s-master1.14f37554d009108f",
+            "uid": "1fd57598-c046-11e7-9440-005056850519",
+            "resourceVersion": "161628",
+            "creationTimestamp": "2017-11-03T03:21:47Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-apiserver-k8s-master1",
+                "UID": "f2c049ca-c079-11e7-bd34-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "158613",
+                "FieldPath": ""
+            },
+            "Reason": "NodeControllerEviction",
+            "Message": "Marking for deletion Pod kube-apiserver-k8s-master1 from Node k8s-master1",
+            "Source": {
+                "Component": "controllermanager",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T03:21:47Z",
+            "LastTimestamp": "2017-11-03T03:21:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-controller-manager-k8s-master1.14f37554d17f0ac8",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-controller-manager-k8s-master1.14f37554d17f0ac8",
+            "uid": "1fd7b2ae-c046-11e7-9440-005056850519",
+            "resourceVersion": "161632",
+            "creationTimestamp": "2017-11-03T03:21:47Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-controller-manager-k8s-master1",
+                "UID": "f2dece75-c079-11e7-bd34-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "158614",
+                "FieldPath": ""
+            },
+            "Reason": "NodeControllerEviction",
+            "Message": "Marking for deletion Pod kube-controller-manager-k8s-master1 from Node k8s-master1",
+            "Source": {
+                "Component": "controllermanager",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T03:21:47Z",
+            "LastTimestamp": "2017-11-03T03:21:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-2m9s4.14f373f75e1977dc",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-2m9s4.14f373f75e1977dc",
+            "uid": "a7cc6dd2-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149614",
+            "creationTimestamp": "2017-11-03T02:56:57Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-2m9s4",
+                "UID": "15c65f79-bfa9-11e7-88f5-0050568509ed",
+                "APIVersion": "v1",
+                "ResourceVersion": "137915",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-dns-config\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-2m9s4.14f373f79f4017db",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-2m9s4.14f373f79f4017db",
+            "uid": "aae5e71b-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149724",
+            "creationTimestamp": "2017-11-03T02:57:02Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-2m9s4",
+                "UID": "15c65f79-bfa9-11e7-88f5-0050568509ed",
+                "APIVersion": "v1",
+                "ResourceVersion": "137915",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-dns-token-c499n\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:47Z",
+            "LastTimestamp": "2017-11-03T02:56:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-2m9s4.14f373f7bb2d3e93",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-2m9s4.14f373f7bb2d3e93",
+            "uid": "abf88b1e-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149761",
+            "creationTimestamp": "2017-11-03T02:57:04Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-2m9s4",
+                "UID": "15c65f79-bfa9-11e7-88f5-0050568509ed",
+                "APIVersion": "v1",
+                "ResourceVersion": "137915",
+                "FieldPath": "spec.containers{sidecar}"
+            },
+            "Reason": "Killing",
+            "Message": "Killing container with id docker://sidecar:Need to kill Pod",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:47Z",
+            "LastTimestamp": "2017-11-03T02:56:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37226ebdf088a",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37226ebdf088a",
+            "uid": "fc5edb6d-c03d-11e7-9440-005056850519",
+            "resourceVersion": "149048",
+            "creationTimestamp": "2017-11-03T02:23:31Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "138081",
+                "FieldPath": ""
+            },
+            "Reason": "FailedScheduling",
+            "Message": "No nodes are available that match all of the predicates: Insufficient pods (1), NodeNotReady (2), NodeUnschedulable (3).",
+            "Source": {
+                "Component": "default-scheduler",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T02:23:31Z",
+            "LastTimestamp": "2017-11-03T02:53:03Z",
+            "Count": 102,
+            "Type": "Warning"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f373fcc1a7150f",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f373fcc1a7150f",
+            "uid": "b80533db-c042-11e7-9440-005056850519",
+            "resourceVersion": "150277",
+            "creationTimestamp": "2017-11-03T02:57:24Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "149926",
+                "FieldPath": ""
+            },
+            "Reason": "FailedScheduling",
+            "Message": "No nodes are available that match all of the predicates: Insufficient pods (2), NodeUnschedulable (3).",
+            "Source": {
+                "Component": "default-scheduler",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T02:57:09Z",
+            "LastTimestamp": "2017-11-03T02:57:24Z",
+            "Count": 6,
+            "Type": "Warning"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37419c7519b07",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37419c7519b07",
+            "uid": "f956beff-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151972",
+            "creationTimestamp": "2017-11-03T02:59:14Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-dns-config\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:14Z",
+            "LastTimestamp": "2017-11-03T02:59:14Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37419d352b09d",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37419d352b09d",
+            "uid": "f9757cf4-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151978",
+            "creationTimestamp": "2017-11-03T02:59:14Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-dns-token-c499n\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:14Z",
+            "LastTimestamp": "2017-11-03T02:59:14Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37419f8df27d2",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37419f8df27d2",
+            "uid": "fa0dfd23-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "153735",
+            "creationTimestamp": "2017-11-03T02:59:15Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{kubedns}"
+            },
+            "Reason": "Pulled",
+            "Message": "Container image \"gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5\" already present on machine",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:14Z",
+            "LastTimestamp": "2017-11-03T03:14:16Z",
+            "Count": 5,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37419fb1ec2d5",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37419fb1ec2d5",
+            "uid": "fa4ab170-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "153736",
+            "creationTimestamp": "2017-11-03T02:59:15Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{kubedns}"
+            },
+            "Reason": "Created",
+            "Message": "Created container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T03:14:16Z",
+            "Count": 5,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a00149a0c",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a00149a0c",
+            "uid": "fa6920cf-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "153737",
+            "creationTimestamp": "2017-11-03T02:59:15Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{kubedns}"
+            },
+            "Reason": "Started",
+            "Message": "Started container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T03:14:16Z",
+            "Count": 5,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a00814e63",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a00814e63",
+            "uid": "fa87aa3a-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152012",
+            "creationTimestamp": "2017-11-03T02:59:16Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{dnsmasq}"
+            },
+            "Reason": "Pulled",
+            "Message": "Container image \"gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5\" already present on machine",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T02:59:15Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a029a5689",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a029a5689",
+            "uid": "faa625b6-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152014",
+            "creationTimestamp": "2017-11-03T02:59:16Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{dnsmasq}"
+            },
+            "Reason": "Created",
+            "Message": "Created container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T02:59:15Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a07dffe64",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a07dffe64",
+            "uid": "fb01b31d-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152021",
+            "creationTimestamp": "2017-11-03T02:59:16Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{dnsmasq}"
+            },
+            "Reason": "Started",
+            "Message": "Started container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T02:59:15Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a081d47c2",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a081d47c2",
+            "uid": "fb203944-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152024",
+            "creationTimestamp": "2017-11-03T02:59:17Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{sidecar}"
+            },
+            "Reason": "Pulled",
+            "Message": "Container image \"gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5\" already present on machine",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T02:59:15Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a0a497087",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a0a497087",
+            "uid": "fb3ebb42-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152026",
+            "creationTimestamp": "2017-11-03T02:59:17Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{sidecar}"
+            },
+            "Reason": "Created",
+            "Message": "Created container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T02:59:15Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741a1219ddb9",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741a1219ddb9",
+            "uid": "fb5d45f3-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152030",
+            "creationTimestamp": "2017-11-03T02:59:17Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{sidecar}"
+            },
+            "Reason": "Started",
+            "Message": "Started container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:15Z",
+            "LastTimestamp": "2017-11-03T02:59:15Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3741ae3f91226",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3741ae3f91226",
+            "uid": "fe76ba07-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "152846",
+            "creationTimestamp": "2017-11-03T02:59:22Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{kubedns}"
+            },
+            "Reason": "Unhealthy",
+            "Message": "Readiness probe failed: Get http://10.244.4.173:8081/readiness: dial tcp 10.244.4.173:8081: getsockopt: connection refused",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:59:18Z",
+            "LastTimestamp": "2017-11-03T03:00:38Z",
+            "Count": 8,
+            "Type": "Warning"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f3742867545797",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f3742867545797",
+            "uid": "1ec76ea5-c043-11e7-88f5-0050568509ed",
+            "resourceVersion": "159534",
+            "creationTimestamp": "2017-11-03T03:00:16Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{dnsmasq}"
+            },
+            "Reason": "Unhealthy",
+            "Message": "Liveness probe failed: HTTP probe failed with statuscode: 503",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T03:00:16Z",
+            "LastTimestamp": "2017-11-03T03:29:14Z",
+            "Count": 34,
+            "Type": "Warning"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37438c81f96bd",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37438c81f96bd",
+            "uid": "5ae4d5b2-c044-11e7-bd35-005056855b98",
+            "resourceVersion": "163698",
+            "creationTimestamp": "2017-11-03T03:09:07Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{dnsmasq}"
+            },
+            "Reason": "Killing",
+            "Message": "Killing container with id docker://dnsmasq:Container failed liveness probe.. Container will be killed and recreated.",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T03:01:27Z",
+            "LastTimestamp": "2017-11-03T03:39:24Z",
+            "Count": 11,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37447509315ce",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37447509315ce",
+            "uid": "86c48bbe-c048-11e7-9440-005056850519",
+            "resourceVersion": "165659",
+            "creationTimestamp": "2017-11-03T03:38:58Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": "spec.containers{kubedns}"
+            },
+            "Reason": "BackOff",
+            "Message": "Back-off restarting failed container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T03:02:29Z",
+            "LastTimestamp": "2017-11-03T03:49:16Z",
+            "Count": 140,
+            "Type": "Warning"
+        },
+        {
+            "name": "kube-dns-545bc4bfd4-qdscf.14f37447509408e5",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-dns-545bc4bfd4-qdscf.14f37447509408e5",
+            "uid": "0bad4c5f-c045-11e7-bd35-005056855b98",
+            "resourceVersion": "164361",
+            "creationTimestamp": "2017-11-03T03:14:03Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-dns-545bc4bfd4-qdscf",
+                "UID": "20469320-c03d-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151924",
+                "FieldPath": ""
+            },
+            "Reason": "FailedSync",
+            "Message": "Error syncing pod",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T03:02:29Z",
+            "LastTimestamp": "2017-11-03T03:44:22Z",
+            "Count": 139,
+            "Type": "Warning"
+        },
+        {
+            "name": "kube-flannel-ds-5qxbt.14f373f726fe40c1",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-5qxbt.14f373f726fe40c1",
+            "uid": "a0bf3de9-c042-11e7-9440-005056850519",
+            "resourceVersion": "149412",
+            "creationTimestamp": "2017-11-03T02:56:45Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-5qxbt",
+                "UID": "0438fc44-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143165",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"cni\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-5qxbt.14f373f7270ce3bd",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-5qxbt.14f373f7270ce3bd",
+            "uid": "a0f146a5-c042-11e7-9440-005056850519",
+            "resourceVersion": "149422",
+            "creationTimestamp": "2017-11-03T02:56:45Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-5qxbt",
+                "UID": "0438fc44-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143165",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"run\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-5qxbt.14f373f74bd2840a",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-5qxbt.14f373f74bd2840a",
+            "uid": "a4846a71-c042-11e7-9440-005056850519",
+            "resourceVersion": "149504",
+            "creationTimestamp": "2017-11-03T02:56:51Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-5qxbt",
+                "UID": "0438fc44-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143165",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"flannel-cfg\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-5qxbt.14f373f7638496a1",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-5qxbt.14f373f7638496a1",
+            "uid": "a53c39db-c042-11e7-9440-005056850519",
+            "resourceVersion": "149531",
+            "creationTimestamp": "2017-11-03T02:56:53Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-5qxbt",
+                "UID": "0438fc44-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143165",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"flannel-token-9vszx\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-8f8g5.14f373f72cc3e058",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-8f8g5.14f373f72cc3e058",
+            "uid": "a1e7001f-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149437",
+            "creationTimestamp": "2017-11-03T02:56:47Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-8f8g5",
+                "UID": "0c865aa1-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "137921",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"run\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-8f8g5.14f373f72cf21b25",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-8f8g5.14f373f72cf21b25",
+            "uid": "a1e80856-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149439",
+            "creationTimestamp": "2017-11-03T02:56:47Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-8f8g5",
+                "UID": "0c865aa1-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "137921",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"cni\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-8f8g5.14f373f754553a6f",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-8f8g5.14f373f754553a6f",
+            "uid": "a588bc31-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149542",
+            "creationTimestamp": "2017-11-03T02:56:53Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-8f8g5",
+                "UID": "0c865aa1-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "137921",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"flannel-token-9vszx\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-flannel-ds-8f8g5.14f373f76c07c3f2",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-flannel-ds-8f8g5.14f373f76c07c3f2",
+            "uid": "a91c396e-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149661",
+            "creationTimestamp": "2017-11-03T02:56:59Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-flannel-ds-8f8g5",
+                "UID": "0c865aa1-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "137921",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"flannel-cfg\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-4ktbq.14f373f72701cfba",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-4ktbq.14f373f72701cfba",
+            "uid": "a0d2c0ca-c042-11e7-9440-005056850519",
+            "resourceVersion": "149414",
+            "creationTimestamp": "2017-11-03T02:56:45Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-4ktbq",
+                "UID": "0438f976-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143170",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"xtables-lock\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-4ktbq.14f373f740041acc",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-4ktbq.14f373f740041acc",
+            "uid": "a29c6083-c042-11e7-9440-005056850519",
+            "resourceVersion": "149459",
+            "creationTimestamp": "2017-11-03T02:56:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-4ktbq",
+                "UID": "0438f976-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143170",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-4ktbq.14f373f757a321ea",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-4ktbq.14f373f757a321ea",
+            "uid": "a51ce188-c042-11e7-9440-005056850519",
+            "resourceVersion": "149527",
+            "creationTimestamp": "2017-11-03T02:56:52Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-4ktbq",
+                "UID": "0438f976-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143170",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy-token-df9m9\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-4ktbq.14f373f7a5eb7c51",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-4ktbq.14f373f7a5eb7c51",
+            "uid": "ad751f9b-c042-11e7-9440-005056850519",
+            "resourceVersion": "149811",
+            "creationTimestamp": "2017-11-03T02:57:06Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-4ktbq",
+                "UID": "0438f976-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "143170",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Killing",
+            "Message": "Killing container with id docker://kube-proxy:Need to kill Pod",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:47Z",
+            "LastTimestamp": "2017-11-03T02:56:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-9flvr.14f37413b3b55fa8",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-9flvr.14f37413b3b55fa8",
+            "uid": "e9c8dc75-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151509",
+            "creationTimestamp": "2017-11-03T02:58:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-9flvr",
+                "UID": "e99b648c-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151504",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"xtables-lock\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:48Z",
+            "LastTimestamp": "2017-11-03T02:58:48Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-9flvr.14f37413c58e1ab4",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-9flvr.14f37413c58e1ab4",
+            "uid": "e9f614c1-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151510",
+            "creationTimestamp": "2017-11-03T02:58:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-9flvr",
+                "UID": "e99b648c-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151504",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:48Z",
+            "LastTimestamp": "2017-11-03T02:58:48Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-9flvr.14f37413d178f17e",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-9flvr.14f37413d178f17e",
+            "uid": "ea149f63-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151512",
+            "creationTimestamp": "2017-11-03T02:58:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-9flvr",
+                "UID": "e99b648c-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151504",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy-token-df9m9\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:48Z",
+            "LastTimestamp": "2017-11-03T02:58:48Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-9flvr.14f37413e27b1453",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-9flvr.14f37413e27b1453",
+            "uid": "ea409033-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151514",
+            "creationTimestamp": "2017-11-03T02:58:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-9flvr",
+                "UID": "e99b648c-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151504",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Pulled",
+            "Message": "Container image \"gcr.io/google_containers/kube-proxy-amd64:v1.8.1\" already present on machine",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:48Z",
+            "LastTimestamp": "2017-11-03T02:58:48Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-9flvr.14f37413e3f052bf",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-9flvr.14f37413e3f052bf",
+            "uid": "ea442ed7-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151516",
+            "creationTimestamp": "2017-11-03T02:58:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-9flvr",
+                "UID": "e99b648c-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151504",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Created",
+            "Message": "Created container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:48Z",
+            "LastTimestamp": "2017-11-03T02:58:48Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-9flvr.14f37413e81d8bb2",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-9flvr.14f37413e81d8bb2",
+            "uid": "ea4ea7b6-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "151517",
+            "creationTimestamp": "2017-11-03T02:58:48Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-9flvr",
+                "UID": "e99b648c-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151504",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Started",
+            "Message": "Started container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:48Z",
+            "LastTimestamp": "2017-11-03T02:58:48Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b4xh7.14f3740d564afea1",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b4xh7.14f3740d564afea1",
+            "uid": "d97cf911-c042-11e7-9440-005056850519",
+            "resourceVersion": "151157",
+            "creationTimestamp": "2017-11-03T02:58:20Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b4xh7",
+                "UID": "d957c9bd-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151155",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"xtables-lock\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:20Z",
+            "LastTimestamp": "2017-11-03T02:58:20Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b4xh7.14f3740d6a1dfd4e",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b4xh7.14f3740d6a1dfd4e",
+            "uid": "d9af7e54-c042-11e7-9440-005056850519",
+            "resourceVersion": "151168",
+            "creationTimestamp": "2017-11-03T02:58:21Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b4xh7",
+                "UID": "d957c9bd-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151155",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:21Z",
+            "LastTimestamp": "2017-11-03T02:58:21Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b4xh7.14f3740d760eef5a",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b4xh7.14f3740d760eef5a",
+            "uid": "d9ce13e4-c042-11e7-9440-005056850519",
+            "resourceVersion": "151170",
+            "creationTimestamp": "2017-11-03T02:58:21Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b4xh7",
+                "UID": "d957c9bd-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151155",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy-token-df9m9\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:21Z",
+            "LastTimestamp": "2017-11-03T02:58:21Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b4xh7.14f3740d84a73701",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b4xh7.14f3740d84a73701",
+            "uid": "d9f38f93-c042-11e7-9440-005056850519",
+            "resourceVersion": "151175",
+            "creationTimestamp": "2017-11-03T02:58:21Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b4xh7",
+                "UID": "d957c9bd-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151155",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Pulled",
+            "Message": "Container image \"gcr.io/google_containers/kube-proxy-amd64:v1.8.1\" already present on machine",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:21Z",
+            "LastTimestamp": "2017-11-03T02:58:21Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b4xh7.14f3740db31c269b",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b4xh7.14f3740db31c269b",
+            "uid": "da6a681a-c042-11e7-9440-005056850519",
+            "resourceVersion": "151183",
+            "creationTimestamp": "2017-11-03T02:58:22Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b4xh7",
+                "UID": "d957c9bd-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151155",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Created",
+            "Message": "Created container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:22Z",
+            "LastTimestamp": "2017-11-03T02:58:22Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b4xh7.14f3740db77f4719",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b4xh7.14f3740db77f4719",
+            "uid": "da75f8b6-c042-11e7-9440-005056850519",
+            "resourceVersion": "151184",
+            "creationTimestamp": "2017-11-03T02:58:22Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b4xh7",
+                "UID": "d957c9bd-c042-11e7-9440-005056850519",
+                "APIVersion": "v1",
+                "ResourceVersion": "151155",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Started",
+            "Message": "Started container",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker2"
+            },
+            "FirstTimestamp": "2017-11-03T02:58:22Z",
+            "LastTimestamp": "2017-11-03T02:58:22Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b8xz9.14f373f72cb940de",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b8xz9.14f373f72cb940de",
+            "uid": "a1a81d2e-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149436",
+            "creationTimestamp": "2017-11-03T02:56:47Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b8xz9",
+                "UID": "0c864fb0-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "140745",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"xtables-lock\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:45Z",
+            "LastTimestamp": "2017-11-03T02:56:45Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b8xz9.14f373f7487ac9f0",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b8xz9.14f373f7487ac9f0",
+            "uid": "a3fc1f95-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149489",
+            "creationTimestamp": "2017-11-03T02:56:50Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b8xz9",
+                "UID": "0c864fb0-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "140745",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b8xz9.14f373f779063934",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b8xz9.14f373f779063934",
+            "uid": "aaa8ea79-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149714",
+            "creationTimestamp": "2017-11-03T02:57:02Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b8xz9",
+                "UID": "0c864fb0-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "140745",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulMountVolume",
+            "Message": "MountVolume.SetUp succeeded for volume \"kube-proxy-token-df9m9\" ",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:46Z",
+            "LastTimestamp": "2017-11-03T02:56:46Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy-b8xz9.14f373f7bd2452b7",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy-b8xz9.14f373f7bd2452b7",
+            "uid": "af120b48-c042-11e7-88f5-0050568509ed",
+            "resourceVersion": "149930",
+            "creationTimestamp": "2017-11-03T02:57:09Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy-b8xz9",
+                "UID": "0c864fb0-bf98-11e7-83ba-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "140745",
+                "FieldPath": "spec.containers{kube-proxy}"
+            },
+            "Reason": "Killing",
+            "Message": "Killing container with id docker://kube-proxy:Need to kill Pod",
+            "Source": {
+                "Component": "kubelet",
+                "Host": "k8s-worker1"
+            },
+            "FirstTimestamp": "2017-11-03T02:56:47Z",
+            "LastTimestamp": "2017-11-03T02:56:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy.14f3740d48f5cf6a",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy.14f3740d48f5cf6a",
+            "uid": "d95ae3b6-c042-11e7-9440-005056850519",
+            "resourceVersion": "151156",
+            "creationTimestamp": "2017-11-03T02:58:20Z",
+            "InvolvedObject": {
+                "Kind": "DaemonSet",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy",
+                "UID": "266255f6-bf79-11e7-bb72-005056855b98",
+                "APIVersion": "extensions",
+                "ResourceVersion": "150401",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulCreate",
+            "Message": "Created pod: kube-proxy-b4xh7",
+            "Source": {
+                "Component": "daemon-set",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T02:58:20Z",
+            "LastTimestamp": "2017-11-03T02:58:20Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-proxy.14f37413a2577869",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-proxy.14f37413a2577869",
+            "uid": "e99bd018-c042-11e7-9440-005056850519",
+            "resourceVersion": "151505",
+            "creationTimestamp": "2017-11-03T02:58:47Z",
+            "InvolvedObject": {
+                "Kind": "DaemonSet",
+                "Namespace": "kube-system",
+                "Name": "kube-proxy",
+                "UID": "266255f6-bf79-11e7-bb72-005056855b98",
+                "APIVersion": "extensions",
+                "ResourceVersion": "151501",
+                "FieldPath": ""
+            },
+            "Reason": "SuccessfulCreate",
+            "Message": "Created pod: kube-proxy-9flvr",
+            "Source": {
+                "Component": "daemon-set",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T02:58:47Z",
+            "LastTimestamp": "2017-11-03T02:58:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        },
+        {
+            "name": "kube-scheduler-k8s-master1.14f37554d2710430",
+            "namespace": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system/events/kube-scheduler-k8s-master1.14f37554d2710430",
+            "uid": "1fd982c5-c046-11e7-9440-005056850519",
+            "resourceVersion": "161636",
+            "creationTimestamp": "2017-11-03T03:21:47Z",
+            "InvolvedObject": {
+                "Kind": "Pod",
+                "Namespace": "kube-system",
+                "Name": "kube-scheduler-k8s-master1",
+                "UID": "f2a2dd80-c079-11e7-bd34-005056855b98",
+                "APIVersion": "v1",
+                "ResourceVersion": "158619",
+                "FieldPath": ""
+            },
+            "Reason": "NodeControllerEviction",
+            "Message": "Marking for deletion Pod kube-scheduler-k8s-master1 from Node k8s-master1",
+            "Source": {
+                "Component": "controllermanager",
+                "Host": ""
+            },
+            "FirstTimestamp": "2017-11-03T03:21:47Z",
+            "LastTimestamp": "2017-11-03T03:21:47Z",
+            "Count": 1,
+            "Type": "Normal"
+        }
+    ]
+}

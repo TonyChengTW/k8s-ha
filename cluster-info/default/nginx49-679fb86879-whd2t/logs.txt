@@ -1,0 +1,2 @@
+==== START logs for container nginx49 of pod default/nginx49-679fb86879-whd2t ====
+==== END logs for container nginx49 of pod default/nginx49-679fb86879-whd2t ====

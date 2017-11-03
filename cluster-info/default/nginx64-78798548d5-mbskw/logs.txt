@@ -1,0 +1,2 @@
+==== START logs for container nginx64 of pod default/nginx64-78798548d5-mbskw ====
+==== END logs for container nginx64 of pod default/nginx64-78798548d5-mbskw ====

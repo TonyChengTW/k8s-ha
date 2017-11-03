@@ -1,0 +1,2 @@
+==== START logs for container nginx330 of pod default/nginx330-65846c9bd5-jhdrg ====
+==== END logs for container nginx330 of pod default/nginx330-65846c9bd5-jhdrg ====

@@ -1,0 +1,2 @@
+==== START logs for container nginx80 of pod default/nginx80-6cdcb96469-g6qfs ====
+==== END logs for container nginx80 of pod default/nginx80-6cdcb96469-g6qfs ====

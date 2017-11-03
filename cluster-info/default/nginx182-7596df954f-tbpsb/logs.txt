@@ -1,0 +1,2 @@
+==== START logs for container nginx182 of pod default/nginx182-7596df954f-tbpsb ====
+==== END logs for container nginx182 of pod default/nginx182-7596df954f-tbpsb ====

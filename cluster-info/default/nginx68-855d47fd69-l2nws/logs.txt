@@ -1,0 +1,2 @@
+==== START logs for container nginx68 of pod default/nginx68-855d47fd69-l2nws ====
+==== END logs for container nginx68 of pod default/nginx68-855d47fd69-l2nws ====

@@ -1,0 +1,2 @@
+==== START logs for container nginx174 of pod default/nginx174-767f877545-rgtdq ====
+==== END logs for container nginx174 of pod default/nginx174-767f877545-rgtdq ====

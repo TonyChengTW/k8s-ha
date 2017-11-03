@@ -1,0 +1,2 @@
+==== START logs for container nginx252 of pod default/nginx252-58d4df485-cdctp ====
+==== END logs for container nginx252 of pod default/nginx252-58d4df485-cdctp ====

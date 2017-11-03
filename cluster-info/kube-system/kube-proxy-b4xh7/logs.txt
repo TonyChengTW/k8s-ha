@@ -1,0 +1,20 @@
+==== START logs for container kube-proxy of pod kube-system/kube-proxy-b4xh7 ====
+W1103 02:58:22.433467       1 server.go:191] WARNING: all flags other than --config, --write-config-to, and --cleanup are deprecated. Please begin using a config file ASAP.
+time="2017-11-03T02:58:22Z" level=warning msg="Running modprobe ip_vs failed with message: `modprobe: ERROR: ../libkmod/libkmod.c:557 kmod_search_moddep() could not open moddep file '/lib/modules/3.10.0-693.5.2.el7.x86_64/modules.dep.bin'`, error: exit status 1"
+time="2017-11-03T02:58:22Z" level=error msg="Could not get ipvs family information from the kernel. It is possible that ipvs is not enabled in your kernel. Native loadbalancing will not work until this is fixed."
+W1103 02:58:22.440412       1 server_others.go:263] Flag proxy-mode="" unknown, assuming iptables proxy
+I1103 02:58:22.441369       1 server_others.go:117] Using iptables Proxier.
+I1103 02:58:22.450057       1 server_others.go:152] Tearing down inactive rules.
+E1103 02:58:22.486019       1 proxier.go:699] Failed to execute iptables-restore for nat: exit status 1 (iptables-restore: line 7 failed
+)
+I1103 02:58:22.489897       1 conntrack.go:98] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072
+I1103 02:58:22.489931       1 conntrack.go:52] Setting nf_conntrack_max to 131072
+I1103 02:58:22.489957       1 conntrack.go:98] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400
+I1103 02:58:22.489973       1 conntrack.go:98] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600
+I1103 02:58:22.491193       1 config.go:102] Starting endpoints config controller
+I1103 02:58:22.492244       1 controller_utils.go:1041] Waiting for caches to sync for endpoints config controller
+I1103 02:58:22.492636       1 config.go:202] Starting service config controller
+I1103 02:58:22.492653       1 controller_utils.go:1041] Waiting for caches to sync for service config controller
+I1103 02:58:22.592751       1 controller_utils.go:1048] Caches are synced for endpoints config controller
+I1103 02:58:22.592866       1 controller_utils.go:1048] Caches are synced for service config controller
+==== END logs for container kube-proxy of pod kube-system/kube-proxy-b4xh7 ====

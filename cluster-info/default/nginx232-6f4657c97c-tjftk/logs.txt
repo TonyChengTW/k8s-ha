@@ -1,0 +1,2 @@
+==== START logs for container nginx232 of pod default/nginx232-6f4657c97c-tjftk ====
+==== END logs for container nginx232 of pod default/nginx232-6f4657c97c-tjftk ====

@@ -1,0 +1,77 @@
+==== START logs for container kube-flannel of pod kube-system/kube-flannel-ds-5qxbt ====
+I1102 06:35:34.717995       1 kube.go:111] Waiting 10m0s for node controller to sync
+I1102 06:35:34.718074       1 kube.go:315] starting kube subnet manager
+I1102 06:35:35.718177       1 kube.go:118] Node controller sync successful
+I1102 06:35:35.718208       1 main.go:132] Installing signal handlers
+I1102 06:35:35.718265       1 manager.go:136] Determining IP address of default interface
+I1102 06:35:35.718479       1 manager.go:149] Using interface with name ens160 and address 192.168.141.155
+I1102 06:35:35.718494       1 manager.go:166] Defaulting external address to interface address (192.168.141.155)
+I1102 06:35:35.771673       1 ipmasq.go:47] Adding iptables rule: -s 10.244.0.0/16 -d 10.244.0.0/16 -j RETURN
+I1102 06:35:35.773868       1 ipmasq.go:47] Adding iptables rule: -s 10.244.0.0/16 ! -d 224.0.0.0/4 -j MASQUERADE
+I1102 06:35:35.776088       1 ipmasq.go:47] Adding iptables rule: ! -s 10.244.0.0/16 -d 10.244.0.0/16 -j MASQUERADE
+I1102 06:35:35.778244       1 manager.go:250] Lease acquired: 10.244.3.0/24
+I1102 06:35:35.778385       1 network.go:58] Watching for L3 misses
+I1102 06:35:35.778398       1 network.go:66] Watching for new subnet leases
+E1102 08:07:57.994143       1 reflector.go:311] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to watch *api.Node: Get https://10.96.0.1:443/api/v1/watch/nodes?resourceVersion=26248&timeoutSeconds=414: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:07:58.994988       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:07:59.995712       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:00.996516       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:01.997513       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:02.998332       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:03.999072       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:04.999912       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:06.000573       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:07.001280       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:08.002067       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:09.002998       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:10.003828       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:11.004586       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+E1102 08:08:12.005556       1 reflector.go:214] github.com/coreos/flannel/subnet/kube/kube.go:316: Failed to list *api.Node: Get https://10.96.0.1:443/api/v1/nodes?resourceVersion=0: dial tcp 10.96.0.1:443: getsockopt: connection refused
+==== END logs for container kube-flannel of pod kube-system/kube-flannel-ds-5qxbt ====
+==== START logs for container install-cni of pod kube-system/kube-flannel-ds-5qxbt ====
++ cp -f /etc/kube-flannel/cni-conf.json /etc/cni/net.d/10-flannel.conf
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
++ true
++ sleep 3600
+==== END logs for container install-cni of pod kube-system/kube-flannel-ds-5qxbt ====

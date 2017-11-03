@@ -1,0 +1,2 @@
+==== START logs for container nginx26 of pod default/nginx26-76d6ff9cd9-pwvq4 ====
+==== END logs for container nginx26 of pod default/nginx26-76d6ff9cd9-pwvq4 ====
